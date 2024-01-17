@@ -36,7 +36,7 @@
     background-color: #ffffff;
     margin-top: 24px;
     cursor: pointer;
-    background-image: url(./svg-1.svg);
+    background-image: url(./images/svg-1.svg);
     background-repeat: no-repeat;
     margin-left: 16px;
   }
@@ -49,7 +49,7 @@
     margin-top: 18.59px;
     border: 0.5px solid #ffffff;
     cursor: pointer;
-    background-image: url(./svg.svg);
+    background-image: url(./images/svg.svg);
     background-repeat: no-repeat;
     margin-left: 16px;
   }
@@ -57,7 +57,7 @@
     width: 2px;
     height: 32px;
     margin-top: 28px;
-    background-image: url(./line.svg);
+    background-image: url(./images/line.svg);
     background-repeat: no-repeat; 
     margin-left: 16px;
   } 
@@ -68,7 +68,7 @@
     background-color: #ffffff;
     margin-top: 24px;
     cursor: pointer;
-    background-image: url(./svg-2.svg);
+    background-image: url(./images/svg-2.svg);
     margin-left: 20px;
   }
 
@@ -79,7 +79,7 @@
     border: none;
     background-color: #ffffff;
     cursor: pointer;
-    background-image: url(./svg-3.svg);
+    background-image: url(./images/svg-3.svg);
     background-repeat: no-repeat;
     margin-left: 16px;
   }
@@ -92,7 +92,7 @@
     display: block;
     width: 320px;
     height: 1px;
-    background-image: url(./shadow.svg);
+    background-image: url(./images/shadow.svg);
     background-repeat: repeat-x;
     margin-top: 13.5px;
   }
@@ -102,7 +102,7 @@
     height: 40px; 
   } 
   .first__blue-line {
-   background-image: url(./blue-line.svg);
+   background-image: url(./images/blue-line.svg);
    width: 4px;
    height: 40px;
    margin-top: 24px;
@@ -429,7 +429,7 @@
      background-color: #ffffff;
      margin-top: 24px;
      cursor: pointer;
-     background-image: url(./svg-1.svg);
+     background-image: url(./images/svg-1.svg);
      background-repeat: no-repeat;
      margin-left: 24px;
    }
@@ -437,7 +437,7 @@
        width: 2px;
        height: 32px;
        margin-top: 28px;
-       background-image: url(./line.svg);
+       background-image: url(./images/line.svg);
        background-repeat: no-repeat; 
        margin-left: 20px;
      } 
@@ -451,14 +451,14 @@
      margin-top: 18.59px;
      border: 0.5px solid #ffffff;
      cursor: pointer;
-     background-image: url(./svg.svg);
+     background-image: url(./images/svg.svg);
      background-repeat: no-repeat;
      margin-left: 20px;
    }
    .nav__phone_tablet {
     width: 40px;
     height: 40px;
-    background-image: url(./phone.svg);
+    background-image: url(./images/phone.svg);
     background-repeat: no-repeat;
     margin-top: 24px; 
     margin-left: 250.72px;
@@ -467,7 +467,7 @@
    .nav__message_tablet {
     width: 40px;
     height: 40px;
-    background-image: url(./message.svg);
+    background-image: url(./images/message.svg);
     background-repeat: no-repeat;
     margin-top: 24px;
     margin-left: 16px;
@@ -476,7 +476,7 @@
    .nav__profile_tablet {
     width: 40px;
     height: 40px;
-    background-image: url(./profile.svg);
+    background-image: url(./images/profile.svg);
     background-repeat: no-repeat;
     margin-top: 24px;
     margin-left: 16px;
@@ -486,7 +486,7 @@
      width: 2px;
      height: 32px;
      margin-top: 28px;
-     background-image: url(./line.svg);
+     background-image: url(./images/line.svg);
      background-repeat: no-repeat; 
      margin-left: 20px;
    } 
@@ -497,7 +497,7 @@
      background-color: #ffffff;
      margin-top: 24px;
      cursor: pointer;
-     background-image: url(./svg-2.svg);
+     background-image: url(./images/svg-2.svg);
      margin-left: 20px;
    }
    .nav__search_tablet {
@@ -507,7 +507,7 @@
     border: none;
     background-color: #ffffff;
     cursor: pointer;
-    background-image: url(./svg-3.svg);
+    background-image: url(./images/svg-3.svg);
     background-repeat: no-repeat;
     margin-left: 16px;
   }
@@ -517,7 +517,7 @@
      src: url(./TTLakes-Bold.ttf);
    }
    .shadow {
-    background-image: url(./shadow.svg);
+    background-image: url(./images/shadow.svg);
     background-repeat: repeat-x;
     width: 768px;
     height: 1px;
@@ -529,7 +529,7 @@
      height: 40px; 
    } 
    .first__blue-line {
-    background-image: url(./blue-line.svg);
+    background-image: url(./images/blue-line.svg);
     width: 4px;
     height: 40px;
     margin-top: 24px;
@@ -831,7 +831,7 @@
   height: 208px;   
   margin-left: 48px;
   margin-top: 16px;
-  background-image: url(./cps__tablet.png) ;
+  background-image: url(./images/cps__tablet.png) ;
   background-repeat: no-repeat; 
   border-radius: 5px;
    } 
@@ -877,7 +877,7 @@
       background-color: #ffffff;
       margin-top: 24px;
       cursor: pointer;
-      background-image: url(./svg-1.svg);
+      background-image: url(./images/svg-1.svg);
       background-repeat: no-repeat;
       margin-left: 16px;
     }
@@ -890,7 +890,7 @@
       margin-top: 18.59px;
       border: 0.5px solid #ffffff;
       cursor: pointer;
-      background-image: url(./svg.svg);
+      background-image: url(./images/svg.svg);
       background-repeat: no-repeat;
       margin-left: 16px;
     }
@@ -898,7 +898,7 @@
       width: 2px;
       height: 32px;
       margin-top: 28px;
-      background-image: url(./line.svg);
+      background-image: url(./images/line.svg);
       background-repeat: no-repeat; 
       margin-left: 16px;
     } 
@@ -909,7 +909,7 @@
       background-color: #ffffff;
       margin-top: 24px;
       cursor: pointer;
-      background-image: url(./svg-2.svg);
+      background-image: url(./images/svg-2.svg);
       margin-left: 20px;
     }
   
@@ -920,7 +920,7 @@
       border: none;
       background-color: #ffffff;
       cursor: pointer;
-      background-image: url(./svg-3.svg);
+      background-image: url(./images/svg-3.svg);
       background-repeat: no-repeat;
       margin-left: 16px;
     }
@@ -936,7 +936,7 @@
       height: 40px; 
     } 
     .first__blue-line {
-     background-image: url(./blue-line.svg);
+     background-image: url(./images/blue-line.svg);
      width: 4px;
      height: 40px;
     }
@@ -1211,7 +1211,7 @@
       width: 531.35px;
       height: 307px;   
       margin-left: 36px;
-      background-image: url(./_MG_3223cps__desk.png);
+      background-image: url(./images/_MG_3223cps__desk.png);
       background-repeat: no-repeat; 
       border-radius: 5px;
        } 
@@ -1251,7 +1251,7 @@
     margin-left: 8px;
     border: none;
     background-color: #F8F8F8;
-    background-image: url(./svg-2.svg);
+    background-image: url(./images/svg-2.svg);
   }
 
   .label1 {
@@ -1271,7 +1271,7 @@
     margin-left: 8px;
     border: none;
     background-color: #F8F8F8;
-    background-image: url(./svg-3.svg);
+    background-image: url(./images/svg-3.svg);
 
   }
   }
