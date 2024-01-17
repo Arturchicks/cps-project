@@ -86,7 +86,7 @@
 
 @font-face {
     font-family: TT Lakes;
-    src: url(./TTLakes-Bold.ttf);
+    src: url(./fonts/TTLakes-Bold.ttf);
   }
   .shadow {
     display: block;
@@ -122,7 +122,7 @@
   }
   @font-face {
     font-family: TT Lakes Regular;
-    src: url(./TTLakes-Regular.ttf);
+    src: url(./fonts/TTLakes-Regular.ttf);
   } 
   
   .scroll {
@@ -164,7 +164,7 @@
   }
   .scroll__repairs:hover {
     background-color: #ffffff;
-    margin-left: 12px;
+    margin-left: 16px;
     margin-top: 48px; 
     width: 245px; 
     height: 40px;
@@ -175,9 +175,9 @@
     letter-spacing: -0.2px;
     border: 2px solid #B8FFEC;
     border-radius: 6px; 
-    padding-left: 18px;
+    padding-left: 14px;
     cursor: pointer;
-    padding-right: 16px;
+    padding-right: 14px;
     font-weight: 550;
   }
 
@@ -514,7 +514,7 @@
  
  @font-face {
      font-family: TT Lakes;
-     src: url(./TTLakes-Bold.ttf);
+     src: url(./fonts/TTLakes-Bold.ttf);
    }
    .shadow {
     background-image: url(./images/shadow.svg);
@@ -549,7 +549,7 @@
    }
    @font-face {
      font-family: TT Lakes Regular;
-     src: url(./TTLakes-Regular.ttf);
+     src: url(./fonts/TTLakes-Regular.ttf);
    } 
    
    .scroll {
@@ -924,7 +924,7 @@
   
   @font-face {
       font-family: TT Lakes;
-      src: url(./TTLakes-Bold.ttf);
+      src: url(./fonts/TTLakes-Bold.ttf);
     }
    
     .first {
@@ -952,7 +952,7 @@
     }
     @font-face {
       font-family: TT Lakes Regular;
-      src: url(./TTLakes-Regular.ttf);
+      src: url(./fonts/TTLakes-Regular.ttf);
     } 
     
     .scroll {
