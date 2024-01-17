@@ -279,7 +279,7 @@
 }
   .scroll__adresses {
     margin-top: 48px; 
-    width: 242px; 
+    width: 216.71px; 
     height: 40px;
     font-family: TT Lakes Regular;
     font-size: 16px;
@@ -295,7 +295,7 @@
   .scroll__adresses:hover { 
     background-color: #ffffff;
     margin-top: 48px; 
-    width: 242px; 
+    width: 216.71px; 
     height: 40px;
     font-family: TT Lakes Regular;
     font-size: 16px;
@@ -651,7 +651,6 @@
      line-height: 24px;
      color: #7E7E82; 
      letter-spacing: -0.2px; 
-     text-align: justify;
      padding-left: 16px;
      padding-right: 16px;
      background-color: #F8F8F8;
@@ -683,7 +682,6 @@
      line-height: 24px;
      color: #7E7E82; 
      letter-spacing: -0.2px; 
-     text-align: justify;
      padding-left: 16px;
      padding-right: 16px;
      background-color: #F8F8F8;
@@ -714,8 +712,7 @@
      font-size: 16px;
      line-height: 24px;
      color: #7E7E82; 
-     letter-spacing: -0.2px; 
-     text-align: justify;
+     letter-spacing: -0.2px;
      padding-left: 8px;
      padding-right: 8px;
      background-color: #F8F8F8;
@@ -988,7 +985,6 @@
       line-height: 24px;
       color: #7E7E82; 
       letter-spacing: -0.2px; 
-      padding-left: 16px;
       cursor: pointer;
       padding-right: 16px;
       padding-left: 16px;
@@ -1109,7 +1105,7 @@
       line-height: 24px;
       color: #7E7E82; 
       letter-spacing: -0.2px; 
-    padding-right: 16px;
+      padding-right: 16px;
       padding-left: 16px;
       background-color: #F8F8F8;
       border: none;
@@ -1144,7 +1140,6 @@
     padding-right: 16px;
     background-color: #F8F8F8;
     border: none;
-    text-align: start;
   }
   .scroll__reviews:hover {
   
