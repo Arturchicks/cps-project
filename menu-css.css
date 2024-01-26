@@ -25,15 +25,16 @@ top: 23px;
 left: 24px;
 width: 40px;
 height: 40px;
-transition: width 0.3s, height 0.3s, opacity 0.3s;
+transition: transform 0.3s;
 }
 .menu__header-img_close-button:hover {
     position: absolute;
     top: 23px;
     left: 24px;
-    width: 44px;
-    height: 44px;
-    opacity: 0.8;
+    width: 40px;
+    height: 40px;
+    transform: scale(1.1);
+ 
     }
 .menu__header-img_logo {
 position: absolute;
@@ -41,7 +42,7 @@ top: 18.73px;
 left: 80.73px;
 width: 97px;
 height: 51px;
-transition: width 0.3s,  height 0.3s, opacity 0.3s;
+transition: opacity 0.3s;
 }
 .menu__header-img_logo:hover {
     position: absolute;
@@ -57,16 +58,16 @@ transition: width 0.3s,  height 0.3s, opacity 0.3s;
  left: 256px;
  width: 40px;
  height: 40px;
- transition: width 0.3s,  height 0.3s, opacity 0.3s;
+ transition: transform 0.3s;
 
 }
 .menu__header-img_search-button:hover {
     position: absolute;
     top: 23px;
     left: 256px;
-    width: 44px;
-    height: 44px;
-    opacity: 0.8;
+    width: 40px;
+    height: 40px;
+    transform: scale(1.1);
     }
 @font-face {
     font-family: TT Lakes Regular;
@@ -79,7 +80,7 @@ flex-direction: column;
 width: 222px;
 height: 876px;
 top: 116px;
-gap: 32px;
+gap: 20px;
 font-family: TT Lakes Regular;  
 font-weight: 900;
 line-height: 24px;
@@ -89,12 +90,11 @@ color: rgba(27, 28, 33, 1);
 } 
 .list__repair {
 
- width: 120px;
- height: 24px;
+ width: 144px;
+ height: 40px;
  background-color: #ffffff;
  border: none;
- margin-left: 24px;
- text-align: left;
+ text-align: end;
  padding: 0;
  font-family: TT Lakes Regular;  
  font-size: 16px;
@@ -102,14 +102,22 @@ color: rgba(27, 28, 33, 1);
  line-height: 24px;
 letter-spacing: -0.2px;
 font-weight: bold;
+transition: all 0.5s ease;
+cursor: pointer;
+}
+.list__repair:hover {
+background-image: url(./images/blue-line-menu.svg);
+background-repeat: no-repeat;
+background-position: left 0px top 2px;
+opacity: 0.5;
+
 }
 .list__services {
- width: 132px;
- height: 24px;
+ width: 156px;
+ height: 40px;
  background-color: #ffffff;
  border: none;
- margin-left: 24px;
- text-align: left;
+ text-align: end;
  padding: 0;
  font-family: TT Lakes Regular;  
  font-size: 16px;
@@ -117,14 +125,21 @@ font-weight: bold;
  line-height: 24px;
 letter-spacing: -0.2px;
 font-weight: bold;
+transition: all 0.5s ease;
+cursor: pointer;
+}
+.list__services:hover {
+background-image: url(./images/blue-line-menu.svg);
+background-repeat: no-repeat;
+background-position: left 0px top 2px;
+opacity: 0.5;
 }
 .list__clients {
- width: 198px;
- height: 24px;
+ width: 222px;
+ height: 40px;
  background-color: #ffffff;
  border: none;
- margin-left: 24px;
- text-align: left;
+ text-align: end;
  padding: 0;
  font-family: TT Lakes Regular;  
  font-size: 16px;
@@ -132,29 +147,21 @@ font-weight: bold;
  line-height: 24px;
 letter-spacing: -0.2px;
 font-weight: bold;
+cursor: pointer;
+transition: all 0.5s ease;
 }
 .list__clients:hover {
-    width: 198px;
-    height: 24px;
-    background-color: #ffffff;
-    border: none;
-    margin-left: 24px;
-    text-align: left;
-    padding: 0;
-    font-family: TT Lakes Regular;  
-    font-size: 16px;
-    color: rgba(27, 28, 33, 1);
-    line-height: 24px;
-   letter-spacing: -0.2px;
-   font-weight: bold;
-   }
+background-image: url(./images/blue-line-menu.svg);
+background-repeat: no-repeat;
+background-position: left 0px top 2px;
+opacity: 0.5;
+}
 .list__sellers {
- width: 149px;
- height: 24px;
+ width: 173px;
+ height: 40px;
  background-color: #ffffff;
  border: none;
- margin-left: 24px;
- text-align: left;
+ text-align: end;
  padding: 0;
  font-family: TT Lakes Regular;  
  font-size: 16px;
@@ -162,14 +169,21 @@ font-weight: bold;
  line-height: 24px;
 letter-spacing: -0.2px;
 font-weight: bold;
+cursor: pointer;
+transition: all 0.5s ease;
+}
+.list__sellers:hover {
+background-image: url(./images/blue-line-menu.svg);
+background-repeat: no-repeat;
+background-position: left 0px top 2px;
+opacity: 0.5;
 }
 .list__partners {
- width: 85px;
- height: 24px;
+ width: 109px;
+ height: 40px;
  background-color: #ffffff;
  border: none;
- margin-left: 24px;
- text-align: left;
+ text-align: end;
  padding: 0;
  font-family: TT Lakes Regular;  
  font-size: 16px;
@@ -177,14 +191,21 @@ font-weight: bold;
  line-height: 24px;
 letter-spacing: -0.2px;
 font-weight: bold;
+cursor: pointer;
+transition: all 0.5s ease;
+}
+.list__partners:hover {
+background-image: url(./images/blue-line-menu.svg);
+background-repeat: no-repeat;
+background-position: left 0px top 2px;
+opacity: 0.5;
 }
 .list__creators {
- width: 130px;
- height: 24px; 
+ width: 154px;
+ height: 40px; 
  background-color: #ffffff;
  border: none;
- margin-left: 24px;
- text-align: left;
+ text-align: end;
  padding: 0;
  font-family: TT Lakes Regular;  
  font-size: 16px;
@@ -192,14 +213,21 @@ font-weight: bold;
  line-height: 24px;
 letter-spacing: -0.2px;
 font-weight: bold;
+cursor: pointer;
+transition: all 0.5s ease;
+}
+.list__creators:hover {
+background-image: url(./images/blue-line-menu.svg);
+background-repeat: no-repeat;
+background-position: left 0px top 2px;
+opacity: 0.5;
 }
 .list__centers {
- width: 188px;
- height: 24px;
+ width: 210px;
+ height: 40px;
  background-color: #ffffff;
  border: none;
- margin-left: 24px;
- text-align: left;
+ text-align: end;
  padding: 0;
  font-family: TT Lakes Regular;  
  font-size: 16px;
@@ -207,14 +235,21 @@ font-weight: bold;
  line-height: 24px;
 letter-spacing: -0.2px;
 font-weight: bold;
+cursor: pointer;
+transition: all 0.5s ease;
+}
+.list__centers:hover {
+background-image: url(./images/blue-line-menu.svg);
+background-repeat: no-repeat;
+background-position: left 0px top 2px;
+opacity: 0.5;
 }
 .list__contacts {
- width: 88px;
- height: 24px;
+ width: 97px;
+ height: 40px;
  background-color: #ffffff;
  border: none;
- margin-left: 24px;
- text-align: left;
+ text-align: end;
  padding: 0;
  font-family: TT Lakes Regular;  
  font-size: 16px;
@@ -222,4 +257,86 @@ font-weight: bold;
  line-height: 24px;
 letter-spacing: -0.2px;
 font-weight: bold;
+cursor: pointer;
+transition: all 0.5s ease;
+}
+.list__contacts:hover {
+background-image: url(./images/blue-line-menu.svg);
+background-repeat: no-repeat;
+background-position: left 0px top 2px;
+opacity: 0.5;
+}
+.contact {
+    display: flex;
+    position: absolute;
+    width: 200px;
+    flex-wrap: wrap;
+    top: 688px;
+    left: 24px;
+    gap: 14px;
+} 
+@font-face {
+    font-family: TTLakes-Bold ;
+    src: url(./fonts/TTLakes-ExtraBold.ttf);
+}
+.contact__email{
+font-size: 16px;
+
+}
+.contact__number { 
+font-family: TTLakes-Bold;
+letter-spacing: -0.6px;
+font-size: 24px;
+line-height: 32px;
+}
+
+.contact__phone {
+cursor: pointer;
+transition: all 0.5s ease;
+}
+.contact__phone:hover {
+ transform: scale(1.1);
+} 
+.contact__message {
+    cursor: pointer;
+    transition: all 0.5s ease;
+    }
+    .contact__message:hover {
+     transform: scale(1.1);
+    } 
+    .contact__profile {
+        cursor: pointer;
+        transition: all 0.5s ease;
+        }
+        .contact__profile:hover {
+         transform: scale(1.1);
+        } 
+.language {
+  display: flex;
+  gap: 8px;
+  position: absolute;
+  top: 852px;
+  left: 24px;
+  color: rgba(27, 28, 33, 1);
+}
+.language__ru {
+    transition: all 0.5s ease; 
+}
+.language__ru:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.language__en {
+    transition: all 0.5s ease; 
+}
+.language__en:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.language__ch {
+    transition: all 0.5s ease; 
+}
+.language__ch:hover {
+    opacity: 0.5;
+    cursor: pointer;
 }
