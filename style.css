@@ -10,12 +10,11 @@ html {
     height: 100%;
   margin: 0;
 }
-@media screen and (min-width: 0px) and (max-width: 768px) { 
+@media screen and (min-width: 0px) and (max-width: 767.5px) { 
   .wrapper {
   display: flex; 
   flex-wrap: wrap;
   width: 100%;
-  min-width: 320px;
   height: 100vh;
   background-color: rgba(248, 248, 248, 1);
 }
@@ -23,7 +22,6 @@ html {
   position: relative;
   display: flex;
   width: 100%;
-  min-width: 320px;
   height: 88px;
   background-color: #ffffff;
   border: 0; 
@@ -58,7 +56,7 @@ html {
 .header__divider_before_repair::before {
   content: url(./images/line.svg);
   position: absolute;
-  top: 27%;
+  top: 30%;
   left: 58%;
   width: 2px;
   height: 32px;
@@ -362,7 +360,7 @@ cursor: pointer;
     display: none;
   }
 }
-@media  screen and (min-width: 768px) and (max-width: 1120px) {
+@media  screen and (min-width: 767.6px) and (max-width: 1120px) {
   .wrapper {
     display: flex; 
     flex-wrap: wrap;
