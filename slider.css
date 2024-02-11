@@ -1,0 +1,140 @@
+* {
+box-sizing: border-box;
+}
+html, body {
+ height: 100%;
+ width: 100%;
+ margin: 0;
+}
+@font-face {
+font-family: TT Lakes Regular;
+src: url(./fonts/TTLakes-Regular.ttf);
+}
+.wrapper {
+height: 100%;
+width: 100%;
+background-color: rgba(248, 248, 248, 1);
+}
+.header {
+border-top: 1px solid rgba(217, 255, 245, 1);
+}
+.header__text_p {
+font-family: TT Lakes Regular;
+color: rgba(126, 126, 130, 1);
+font-size: 16px;
+margin: 0;
+padding: 16px;
+}
+.brands__slide {
+display: flex;
+gap: 16px;
+margin-left: 16px;
+min-width: 0;
+}
+.brands__slide_lenovo.swiper-slide {
+border: 1px solid rgba(234, 234, 234, 1);
+border-radius: 6px;
+padding: 13px;
+background-color: rgba(255, 255, 255, 1);
+max-width: 240px;
+max-height: 72px;
+display: flex;
+gap: 4em;
+}
+.brands__slide_lenovo::after {
+content: url(./images/next-button.svg);
+display: inline-block;
+height: 40px;
+width: 40px;
+}
+.brands__slide_lenovo_el {
+    display: flex;
+    align-items: center;
+}
+.brands__slide_samsung.swiper-slide  {
+display: flex;
+gap: 4em;
+border: 1px solid rgba(234, 234, 234, 1);
+border-radius: 6px;
+padding: 13px;
+background-color: rgba(255, 255, 255, 1);
+max-width: 240px;
+max-height: 72px;
+}
+.brands__slide_samsung_image {
+max-width: 108px;
+}
+.brands__slide_samsung::after {
+content: url(./images/next-button.svg);
+display: inline-block;
+height: 40px;
+width: 40px;
+}
+.brands__slide_samsung_el {
+    display: flex;
+    align-items: center;
+}
+.brands__slide_apple_el{
+    width: 108px;
+}
+.brands__slide_apple.swiper-slide {
+    display: flex;
+gap: 4em;
+border: 1px solid rgba(234, 234, 234, 1);
+border-radius: 6px;
+padding: 13px;
+background-color: rgba(255, 255, 255, 1);
+max-width: 240px;
+max-height: 72px;
+}
+.brands__slide_apple::after {
+content: url(./images/next-button.svg);
+display: inline-block;
+height: 40px;
+width: 40px;
+}
+.brands__slide_bosch.swiper-slide {
+display: flex;
+gap: 4em;
+border: 1px solid rgba(234, 234, 234, 1);
+border-radius: 6px;
+padding: 13px;
+background-color: rgba(255, 255, 255, 1);
+max-width: 240px;
+max-height: 72px;
+}
+.brands__slide_bosch::after {
+content: url(./images/next-button.svg);
+display: inline-block;
+height: 40px;
+width: 40px;
+}
+.brands__slide_bosch_el {
+    width: 108px;
+    align-items: center;
+    display: flex;
+}
+.brands__slide_hp.swiper-slide {
+    display: flex;
+gap: 4em;
+border: 1px solid rgba(234, 234, 234, 1);
+border-radius: 6px;
+padding: 13px;
+background-color: rgba(255, 255, 255, 1);
+max-width: 240px;
+max-height: 72px;
+}
+.brands__slide_hp::after {
+content: url(./images/next-button.svg);
+display: inline-block;
+height: 40px;
+width: 40px;
+}
+.brands__slide_hp_el {
+    width: 108px;
+    align-items: center;
+    display: flex;
+}
+.swiper-container {
+    overflow: hidden;
+}
