@@ -2,9 +2,10 @@
 html {
   height: 100%;
 }
-  * { 
-  box-sizing: border-box;
+* {
+box-sizing: border-box;
 }
+
   body {
     width: 100%;
     height: 100%;
@@ -12,40 +13,44 @@ html {
 }
 @media screen and (min-width: 0px) and (max-width: 767.5px) { 
   .wrapper {
-  display: flex; 
-  flex-wrap: wrap;
   width: 100%;
   height: 100vh;
   background-color: rgba(248, 248, 248, 1);
 }
 .header {
-  position: relative;
   display: flex;
+  padding: 18px 16px;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  height: 88px;
   background-color: #ffffff;
   border: 0; 
   border-bottom: 1px solid rgba(217, 255, 245, 1);
 }
+.header__menu-and-cps_block {
+  display: flex;
+  gap: 16px;
+}
+.header__repair-and-search_block {
+  display: flex;
+  gap: 16px;
+}
 .header__button_menu {
-  position: absolute;
-  top: 27%;
-  left: 5%;
+  display: flex;
+  align-self: center;
   background-image: url(./images/svg-1.svg);
   width: 40px;
   height: 40px;
   border: none;
   background-color: #ffffff;
-  transition: transform 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 .header__button_menu:hover {
-   transform: scale(1.1);
+   opacity: 0.5;
    cursor: pointer;
 }
+
 .header__button_cps {
-  position: absolute;
-  top: 21.1%;
-  left: 22.6%;
   background-image: url(./images/svg.svg);
   width: 98.55px;
   height: 50.81px;
@@ -53,48 +58,44 @@ html {
   background-color: #ffffff;
   background-repeat: no-repeat;
 } 
-.header__divider_before_repair::before {
+
+.header__button_repair::before {
   content: url(./images/line.svg);
-  position: absolute;
-  top: 30%;
-  left: 58%;
   width: 2px;
   height: 32px;
+  display: block; 
+  margin-left: -26px; 
+  cursor: default;
+  pointer-events:none;
 }
 .header__button_repair {
-position: absolute; 
-top: 27%;
-left: 65%;
 width: 40px;
 height: 40px;
 background-image: url(./images/svg-2.svg);
 border: none; 
 background-color: #ffffff;
-transition: transform 0.5s ease;
+transition: opacity 0.5s ease;
 }
 .header__button_repair:hover {
- transform: scale(1.1);
+opacity: 0.5;
 cursor: pointer;
 }
+
 .header__button_search {
-  position: absolute; 
-  top: 27%;
-  left: 82.5%;
   width: 40px;
   height: 40px;
   background-image: url(./images/svg-3.svg);
   border: none; 
   background-color: #ffffff;
-  transition: transform 0.5s ease; 
+  transition: opacity 0.5s ease; 
   }
   .header__button_search:hover {
-    transform: scale(1.1);
+    opacity: 0.5;
     cursor: pointer;
   }
   .main {
-    position: absolute; 
-    top: 88px;
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     background-color: #F8F8F8; 
   }
@@ -104,7 +105,6 @@ cursor: pointer;
   }
   .title {
     display: flex;
-    position: absolute ;
     width: 100%; 
     align-items: center;
     font-family: TT Lakes bold;
@@ -123,17 +123,16 @@ cursor: pointer;
  } 
   
  .scroll {
+  overflow-y: hidden;
+  padding-bottom: 2px;
+  margin-left: 16px;
   display: flex;
-  position: absolute;
-  top: 77px; 
-  left: 4.5%;
-  width: 96%;
-  height: 48px;
+  width: 100%;
   overflow-x: scroll;
   white-space: pre;
  }
 .scroll__repairs {
-  padding: 20px;
+  padding: 9px;
   font-family: TT Lakes Regular;
   color: rgba(126, 126, 130, 1);
   font-size: 16px;
@@ -143,10 +142,10 @@ cursor: pointer;
   background-color: rgba(248, 248, 248, 1);
 }
  .scroll__repairs:hover {
+  padding: 7px;
  border: 2px solid rgba(184, 255, 236, 1); 
  background-color: #ffffff;
 border-radius: 6px; 
-padding: 18px;
 display: flex;
 align-items: center;
 color: rgba(126, 126, 130, 1);
@@ -155,8 +154,7 @@ font-size: 16px;
 cursor: pointer;
 }
 .scroll__addition {
- 
-  padding: 20px;
+  padding: 9px; 
   font-family: TT Lakes Regular;
   color: rgba(126, 126, 130, 1);
   font-size: 16px;
@@ -167,11 +165,10 @@ cursor: pointer;
   background-color: rgba(248, 248, 248, 1);
 }
 .scroll__addition:hover {
-
+  padding: 7px;
     border: 2px solid rgba(184, 255, 236, 1); 
     background-color: #ffffff;
    border-radius: 6px; 
-   padding: 18px;
    display: flex;
    align-items: center;
    color: rgba(126, 126, 130, 1);
@@ -179,7 +176,7 @@ cursor: pointer;
    font-size: 16px;
    }
    .scroll__prices {
-    padding: 20px;
+    padding: 9px;
     font-family: TT Lakes Regular;
     color: rgba(126, 126, 130, 1);
     font-size: 16px;
@@ -190,19 +187,40 @@ cursor: pointer;
     background-color: rgba(248, 248, 248, 1);
   }
    .scroll__prices:hover {
-
+    padding: 7px;
     border: 2px solid rgba(184, 255, 236, 1); 
     background-color: #ffffff;
    border-radius: 6px; 
-   padding: 18px;
    display: flex;
    align-items: center;
    color: rgba(126, 126, 130, 1);
    font-family: TT Lakes Regular;
    font-size: 16px;
    }
+   .scroll__prices_on_service {
+    padding: 9px 20px;
+    font-family: TT Lakes Regular;
+    color: rgba(126, 126, 130, 1);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;  
+    background-color: rgba(248, 248, 248, 1);
+  }
+   .scroll__prices_on_service:hover {
+    padding: 7px 18px;
+   border: 2px solid rgba(184, 255, 236, 1); 
+   background-color: #ffffff;
+   border-radius: 6px; 
+   display: flex;
+   align-items: center;
+   color: rgba(126, 126, 130, 1);
+   font-family: TT Lakes Regular;
+   font-size: 16px;
+   }  
    .scroll__special-prices {
-    padding: 20px;
+    padding: 9px;
     font-family: TT Lakes Regular;
     color: rgba(126, 126, 130, 1);
     font-size: 16px;
@@ -213,11 +231,10 @@ cursor: pointer;
     background-color: rgba(248, 248, 248, 1);
   }
    .scroll__special-prices:hover {
-
+    padding: 7px;
     border: 2px solid rgba(184, 255, 236, 1); 
     background-color: #ffffff;
    border-radius: 6px; 
-   padding: 18px;
    display: flex;
    align-items: center;
    color: rgba(126, 126, 130, 1);
@@ -225,7 +242,7 @@ cursor: pointer;
    font-size: 16px;
    }
    .scroll__adresses {
-    padding: 20px;
+    padding: 9px;
     font-family: TT Lakes Regular;
     color: rgba(126, 126, 130, 1);
     font-size: 16px;
@@ -236,11 +253,10 @@ cursor: pointer;
     background-color: rgba(248, 248, 248, 1);
   }
    .scroll__adresses:hover {
-
+    padding: 7px;
     border: 2px solid rgba(184, 255, 236, 1); 
     background-color: #ffffff;
    border-radius: 6px; 
-   padding: 18px;
    display: flex;
    align-items: center;
    color: rgba(126, 126, 130, 1);
@@ -248,7 +264,7 @@ cursor: pointer;
    font-size: 16px;
    } 
    .scroll__reviews {
-    padding: 20px;
+    padding: 9px;
     font-family: TT Lakes Regular;
     color: rgba(126, 126, 130, 1);
     font-size: 16px;
@@ -259,10 +275,10 @@ cursor: pointer;
     background-color: rgba(248, 248, 248, 1);
   }
    .scroll__reviews:hover {
+    padding: 7px;
    border: 2px solid rgba(184, 255, 236, 1); 
    background-color: #ffffff;
    border-radius: 6px; 
-   padding: 18px;
    display: flex;
    align-items: center;
    color: rgba(126, 126, 130, 1);
@@ -297,23 +313,25 @@ cursor: pointer;
     width: 100%;
     }
   .first-block__article { 
-    position: absolute;
-    width: 90%; 
-    left: 6%;
-    top: 135px; 
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%; 
     font-size: 14px;
     color: rgba(27, 28, 33, 1);
     font-family: TT Lakes Regular; 
     text-align: left;
     letter-spacing: 0.2px;
     line-height: 18px;
-
+  }
+  .first-block__article_text {
+width: 90%;
+margin-bottom: 0;
+margin-left: 16px;
   }
   .read {
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 93%;
     white-space: pre;
     background-color: #F8F8F8;
     border: none;
@@ -333,9 +351,7 @@ cursor: pointer;
   }
   .phone-image {
     width: 100%;
-    position: absolute;
-    max-height: 300px;
-    top: 300px;
+        max-height: 300px;
 
   }
   .header__button_profile_tablet_only {
@@ -359,46 +375,51 @@ cursor: pointer;
   .desktop {
     display: none;
   }
+  .header__block_tablet {
+    display: none;
+  }
+  .header__block_tablet_buttons {
+    display: none;
+  }
+  .header__repair-and-search_block_tablet {
+    display: none;
+  }
+  .first-block__article_desktop_text {
+    display: none;
+  }
 }
-@media  screen and (min-width: 767.6px) and (max-width: 1120px) {
+@media  screen and (min-width: 767.6px) and (max-width: 1119.5px) {
   .wrapper {
-    display: flex; 
-    flex-wrap: wrap;
     width: 100%;
     min-width: 320px;
     height: 100vh;
     background-color: rgba(248, 248, 248, 1);
   }
   .header {
-    position: relative;
     display: flex;
     width: 100%;
     min-width: 320px;
-    height: 88px;
+    padding: 18px 24px;
     background-color: #ffffff;
     border: 0; 
     border-bottom: 1px solid rgba(217, 255, 245, 1);
+    justify-content: space-between;
   }
   .header__button_menu {
-    position: absolute;
-    left: 3%;
     background-image: url(./images/svg-1.svg);
     width: 40px;
     height: 40px;
     border: none;
     background-color: #ffffff;
     top: 27%;
-    transition: transform 0.5s ease;
+    transition: opacity 0.5s ease;
   }
   .header__button_menu:hover {
-    transform: scale(1.1);
+    opacity: 0.5;
     cursor: pointer; 
   }
 
   .header__button_cps {
-    position: absolute;
-    top: 21.1%;
-    left: 13.6%;
     background-image: url(./images/svg.svg);
     width: 98.55px;
     height: 50.81px;
@@ -408,102 +429,88 @@ cursor: pointer;
   } 
   .header__button_cps::before{
     content: url(./images/line.svg);
-    position: absolute;
-    top: 18%;
-    left: -23%;
     width: 2px;
     height: 32px;
+    display: block;
+    margin-left: -22px;
   }
   .header__button_search {
-    position: absolute; 
-    top: 27%;
-    left: 91.5%;
     width: 40px;
     height: 40px;
     background-image: url(./images/svg-3.svg);
     border: none; 
     background-color: #ffffff;
-    transition: transform 0.5s ease; 
+    transition: opacity 0.5s ease; 
     }
     .header__button_search:hover {
-      transform: scale(1.1);
+     opacity: 0.5;
       cursor: pointer;
     }
-    .header__divider_before_repair::before {
-      content: url(./images/line.svg);
-      position: absolute;
-      top: 31%;
-      left: 81%;
-      width: 2px;
-      height: 32px;
-    }
+   
     .header__button_repair {
-    position: absolute; 
-    top: 27%;
-    left: 84%;
     width: 40px;
     height: 40px;
     background-image: url(./images/svg-2.svg);
     border: none; 
     background-color: #ffffff;
-    transition: transform 0.5s ease;
+    transition: opacity 0.5s ease;
     }
     .header__button_repair:hover {
-     transform: scale(1.1);
+    opacity: 0.5;
     cursor: pointer;
     }
+    .header__button_repair::before {
+      content: url(./images/line.svg);
+      width: 2px;
+      height: 32px;
+      display: block; 
+      margin-left: -24px; 
+      cursor: default;
+      pointer-events:none;
+    }
     .header__button_profile_tablet_only {
-      position: absolute;
-      top: 27%;
-      left: 73%;
       background-image: url(./images/profile.svg);
       width: 40px;
       height: 40px;
       background-repeat: no-repeat;
       border: none;
       background-color: #fff;   
-      transition: transform 0.5s ease;    
+      transition: opacity 0.5s ease;    
     }
     .header__button_profile_tablet_only:hover {
-      transform: scale(1.1);
+      opacity: 0.5;
      cursor: pointer;
      }
     .header__button_message_tablet_only {
-      position: absolute;
-      top: 27%;
-      left: 65.5%;
       background-image: url(./images/message.svg);
       width: 40px;
       height: 40px;
       background-repeat: no-repeat;
       border: none;
       background-color: #fff; 
-      transition: transform 0.5s ease;
+      transition: opacity 0.5s ease;
     }
     .header__button_message_tablet_only:hover {
-      transform: scale(1.1);
+     opacity: 0.5;
      cursor: pointer;
      }
     .header__button_phone_tablet_only {
-      position: absolute;
-      top: 27%;
-      left: 58%;
       background-image: url(./images/phone.svg);
       width: 40px;
       height: 40px;
       background-repeat: no-repeat;
       border: none;
       background-color: #fff; 
-      transition: transform 0.5s ease;
+      transition: opacity 0.5s ease;
     }
     .header__button_phone_tablet_only:hover {
-      transform: scale(1.1);
+   opacity: 0.5;
      cursor: pointer;
      }
     .main {
       display: flex;
-      position: absolute;
-      top: 88px;
+      gap: 28px;
+      flex-wrap: wrap;
       width: 100%;
       background-color: #F8F8F8;
     }
@@ -512,9 +519,8 @@ cursor: pointer;
       src: url(./fonts/TTLakes-Bold.ttf);
     }
     .title {
+      margin-bottom: 0;
       display: flex;
-      position: absolute ;
-      top: 8px; 
       width: 100%; 
       align-items: center;
       font-family: TT Lakes bold;
@@ -525,7 +531,7 @@ cursor: pointer;
      content: url(./images/blue-line.svg);
      width: 4px;
      height: 40px;
-     margin-right: 3%;
+     margin-right: 2%;
    }
    @font-face {
     font-family: TT Lakes Regular;
@@ -533,17 +539,16 @@ cursor: pointer;
    } 
     
    .scroll {
+    overflow-y: hidden;
+    padding-bottom: 2px;
+    margin-left: 24px;
     display: flex;
-    position: absolute;
-    top: 100px;
-    left: 3.5%;
-    width: 96%;
-    height: 48px;
+    width: 100%;
     overflow-x: scroll;
     white-space: pre;
    }
   .scroll__repairs {
-    padding: 20px;
+    padding: 9px;
     font-family: TT Lakes Regular;
     color: rgba(126, 126, 130, 1);
     font-size: 16px;
@@ -553,10 +558,10 @@ cursor: pointer;
     background-color: rgba(248, 248, 248, 1);
   }
    .scroll__repairs:hover {
+    padding: 7px;
    border: 2px solid rgba(184, 255, 236, 1); 
    background-color: #ffffff;
   border-radius: 6px; 
-  padding: 18px;
   display: flex;
   align-items: center;
   color: rgba(126, 126, 130, 1);
@@ -565,8 +570,7 @@ cursor: pointer;
   cursor: pointer;
   }
   .scroll__addition {
-   
-    padding: 20px;
+    padding: 9px; 
     font-family: TT Lakes Regular;
     color: rgba(126, 126, 130, 1);
     font-size: 16px;
@@ -577,11 +581,10 @@ cursor: pointer;
     background-color: rgba(248, 248, 248, 1);
   }
   .scroll__addition:hover {
-  
+    padding: 7px;
       border: 2px solid rgba(184, 255, 236, 1); 
       background-color: #ffffff;
      border-radius: 6px; 
-     padding: 18px;
      display: flex;
      align-items: center;
      color: rgba(126, 126, 130, 1);
@@ -589,7 +592,7 @@ cursor: pointer;
      font-size: 16px;
      }
      .scroll__prices {
-      padding: 20px;
+      padding: 9px;
       font-family: TT Lakes Regular;
       color: rgba(126, 126, 130, 1);
       font-size: 16px;
@@ -600,19 +603,40 @@ cursor: pointer;
       background-color: rgba(248, 248, 248, 1);
     }
      .scroll__prices:hover {
-  
+      padding: 7px;
       border: 2px solid rgba(184, 255, 236, 1); 
       background-color: #ffffff;
      border-radius: 6px; 
-     padding: 18px;
      display: flex;
      align-items: center;
      color: rgba(126, 126, 130, 1);
      font-family: TT Lakes Regular;
      font-size: 16px;
      }
+     .scroll__prices_on_service {
+      padding: 9px 20px;
+      font-family: TT Lakes Regular;
+      color: rgba(126, 126, 130, 1);
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      border: none;  
+      background-color: rgba(248, 248, 248, 1);
+    }
+     .scroll__prices_on_service:hover {
+      padding: 7px 18px;
+     border: 2px solid rgba(184, 255, 236, 1); 
+     background-color: #ffffff;
+     border-radius: 6px; 
+     display: flex;
+     align-items: center;
+     color: rgba(126, 126, 130, 1);
+     font-family: TT Lakes Regular;
+     font-size: 16px;
+     }  
      .scroll__special-prices {
-      padding: 20px;
+      padding: 9px;
       font-family: TT Lakes Regular;
       color: rgba(126, 126, 130, 1);
       font-size: 16px;
@@ -623,11 +647,10 @@ cursor: pointer;
       background-color: rgba(248, 248, 248, 1);
     }
      .scroll__special-prices:hover {
-  
+      padding: 7px;
       border: 2px solid rgba(184, 255, 236, 1); 
       background-color: #ffffff;
      border-radius: 6px; 
-     padding: 18px;
      display: flex;
      align-items: center;
      color: rgba(126, 126, 130, 1);
@@ -635,7 +658,7 @@ cursor: pointer;
      font-size: 16px;
      }
      .scroll__adresses {
-      padding: 20px;
+      padding: 9px;
       font-family: TT Lakes Regular;
       color: rgba(126, 126, 130, 1);
       font-size: 16px;
@@ -646,11 +669,10 @@ cursor: pointer;
       background-color: rgba(248, 248, 248, 1);
     }
      .scroll__adresses:hover {
-  
+      padding: 7px;
       border: 2px solid rgba(184, 255, 236, 1); 
       background-color: #ffffff;
      border-radius: 6px; 
-     padding: 18px;
      display: flex;
      align-items: center;
      color: rgba(126, 126, 130, 1);
@@ -658,7 +680,7 @@ cursor: pointer;
      font-size: 16px;
      } 
      .scroll__reviews {
-      padding: 20px;
+      padding: 9px;
       font-family: TT Lakes Regular;
       color: rgba(126, 126, 130, 1);
       font-size: 16px;
@@ -669,16 +691,20 @@ cursor: pointer;
       background-color: rgba(248, 248, 248, 1);
     }
      .scroll__reviews:hover {
+      padding: 7px;
      border: 2px solid rgba(184, 255, 236, 1); 
      background-color: #ffffff;
      border-radius: 6px; 
-     padding: 18px;
      display: flex;
      align-items: center;
      color: rgba(126, 126, 130, 1);
      font-family: TT Lakes Regular;
      font-size: 16px;
      }  
+     .scroll::-webkit-scrollbar {
+      width: 12px; 
+      height: 8px;              
+    }
      .scroll::-webkit-scrollbar {
       width: 12px; 
       height: 8px;              
@@ -705,8 +731,6 @@ cursor: pointer;
     }
     .first-block {
       width: 100%;
-      height: 85%; 
-     margin-top: 180px;
      flex-wrap: nowrap;
      display: flex;
      justify-content: space-around;
@@ -748,23 +772,56 @@ cursor: pointer;
     .tablet-image {
     width: 46%;
     }
+    .header__block_tablet {
+      display: flex;
+      gap: 34px;
+      align-items: center;
+    }
+    .header__menu-and-cps_block {
+      display: flex;
+      gap: 34px;
+      align-items: center;
+    }
+    .header__block_tablet_buttons {
+      display: flex;
+      gap: 16px;
+    }
+    .header__repair-and-search_block_tablet {
+      display: flex;
+      gap: 16px;
+    }
   .phone-image {
     display: none;
   }
   .desktop {
     display: none;
   }
+  .header__repair-and-search_block {
+    display: none;
+  }
+  .first-block__article_desktop_text {
+    display: none;
+    margin-top: 0;
+  }
 }
 
-@media  screen and (min-width: 1120px) {
+@media  screen and (min-width: 1119.6px) {
   body {
     background-color: #F8F8F8;
   }
-  .main {
-  display: none;
+  .title {
+    display: none;
+  }
+  .phone-image {
+    display: none;
   }
   .header {
     display: none;
+  }
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
   }
   @font-face {
     font-family: TT Lakes bold;
@@ -774,23 +831,25 @@ cursor: pointer;
     font-family: TT Lakes Regular;
     src: url(.ы/fonts/TTLakes-Regular.ttf);
    } 
+   .desktop {
+    width: 100%;
+   }
   .desktop__header {
     display: flex;
     width: 100%;
-    gap: 25px;
     margin-top: 42px;
     flex-wrap: wrap;
-    position: absolute;
+    justify-content: space-between;
   }
   .desktop__header_title {
+    gap: 2.5vw;
     display: flex; 
-   
-    width: 62%; 
     align-items: center;
     font-family: TT Lakes bold;
     letter-spacing: -0.6px;
     font-size: 28px;
     margin: 0;
+    white-space: nowrap;
   }
   .desktop__header_title::before {
     content: url(./images/blue-line.svg);
@@ -845,18 +904,21 @@ margin-right: 25px;
   transform: scale(1.1);
   cursor: pointer;
   }
+  .desktop__buttons {
+    display: flex;
+    gap: 18px;
+  }
   .scroll {
-    position: absolute;
-    left: 3%;
-    top: 56px;
+    margin-left: 4vw;
+    overflow-y: hidden;
+    padding-bottom: 2px;
     display: flex;
     width: 100%;
-    height: 48px;
     overflow-x: scroll;
     white-space: pre;
    }
   .scroll__repairs {
-    padding: 20px;
+    padding: 9px 20px;
     font-family: TT Lakes Regular;
     color: rgba(126, 126, 130, 1);
     font-size: 16px;
@@ -866,10 +928,10 @@ margin-right: 25px;
     background-color: rgba(248, 248, 248, 1);
   }
    .scroll__repairs:hover {
+    padding: 7px 18px;
    border: 2px solid rgba(184, 255, 236, 1); 
    background-color: #ffffff;
   border-radius: 6px; 
-  padding: 18px;
   display: flex;
   align-items: center;
   color: rgba(126, 126, 130, 1);
@@ -878,8 +940,7 @@ margin-right: 25px;
   cursor: pointer;
   }
   .scroll__addition {
-   
-    padding: 20px;
+    padding: 9px 20px; 
     font-family: TT Lakes Regular;
     color: rgba(126, 126, 130, 1);
     font-size: 16px;
@@ -890,11 +951,10 @@ margin-right: 25px;
     background-color: rgba(248, 248, 248, 1);
   }
   .scroll__addition:hover {
-  
+    padding: 7px 18px;
       border: 2px solid rgba(184, 255, 236, 1); 
       background-color: #ffffff;
      border-radius: 6px; 
-     padding: 18px;
      display: flex;
      align-items: center;
      color: rgba(126, 126, 130, 1);
@@ -902,7 +962,7 @@ margin-right: 25px;
      font-size: 16px;
      }
      .scroll__prices {
-      padding: 20px;
+      padding: 9px 20px;
       font-family: TT Lakes Regular;
       color: rgba(126, 126, 130, 1);
       font-size: 16px;
@@ -913,11 +973,10 @@ margin-right: 25px;
       background-color: rgba(248, 248, 248, 1);
     }
      .scroll__prices:hover {
-  
+      padding: 7px 18px;
       border: 2px solid rgba(184, 255, 236, 1); 
       background-color: #ffffff;
      border-radius: 6px; 
-     padding: 18px;
      display: flex;
      align-items: center;
      color: rgba(126, 126, 130, 1);
@@ -925,7 +984,7 @@ margin-right: 25px;
      font-size: 16px;
      }
      .scroll__special-prices {
-      padding: 20px;
+      padding: 9px 20px;
       font-family: TT Lakes Regular;
       color: rgba(126, 126, 130, 1);
       font-size: 16px;
@@ -936,11 +995,10 @@ margin-right: 25px;
       background-color: rgba(248, 248, 248, 1);
     }
      .scroll__special-prices:hover {
-  
+      padding: 7px 18px;
       border: 2px solid rgba(184, 255, 236, 1); 
       background-color: #ffffff;
      border-radius: 6px; 
-     padding: 18px;
      display: flex;
      align-items: center;
      color: rgba(126, 126, 130, 1);
@@ -948,7 +1006,7 @@ margin-right: 25px;
      font-size: 16px;
      }
      .scroll__adresses {
-      padding: 20px;
+      padding: 9px 20px;
       font-family: TT Lakes Regular;
       color: rgba(126, 126, 130, 1);
       font-size: 16px;
@@ -959,11 +1017,10 @@ margin-right: 25px;
       background-color: rgba(248, 248, 248, 1);
     }
      .scroll__adresses:hover {
-  
+      padding: 7px 18px;
       border: 2px solid rgba(184, 255, 236, 1); 
       background-color: #ffffff;
      border-radius: 6px; 
-     padding: 18px;
      display: flex;
      align-items: center;
      color: rgba(126, 126, 130, 1);
@@ -971,7 +1028,7 @@ margin-right: 25px;
      font-size: 16px;
      } 
      .scroll__reviews {
-      padding: 20px;
+      padding: 9px 20px;
       font-family: TT Lakes Regular;
       color: rgba(126, 126, 130, 1);
       font-size: 16px;
@@ -982,16 +1039,41 @@ margin-right: 25px;
       background-color: rgba(248, 248, 248, 1);
     }
      .scroll__reviews:hover {
+      padding: 7px 18px;
      border: 2px solid rgba(184, 255, 236, 1); 
      background-color: #ffffff;
      border-radius: 6px; 
-     padding: 18px;
      display: flex;
      align-items: center;
      color: rgba(126, 126, 130, 1);
      font-family: TT Lakes Regular;
      font-size: 16px;
      }  
+     .scroll__prices_on_service {
+      padding: 9px 20px;
+      font-family: TT Lakes Regular;
+      color: rgba(126, 126, 130, 1);
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      border: none;  
+      background-color: rgba(248, 248, 248, 1);
+    }
+     .scroll__prices_on_service:hover {
+      padding: 7px 18px;
+     border: 2px solid rgba(184, 255, 236, 1); 
+     background-color: #ffffff;
+     border-radius: 6px; 
+     display: flex;
+     align-items: center;
+     color: rgba(126, 126, 130, 1);
+     font-family: TT Lakes Regular;
+     font-size: 16px;
+     }  
+     .tablet-image {
+      max-width: 531px;
+     }
      .scroll::-webkit-scrollbar {
       width: 12px; 
       height: 8px;              
@@ -1004,6 +1086,55 @@ margin-right: 25px;
       border-radius: 20px;       
       border: 3px solid #F8F8F8;  
     }
+    .first-block {
+      margin-right: 2vw;
+      margin-left: 4vw;
+      width: 100%;
+     flex-wrap: nowrap;
+     display: flex;
+     gap: 1vw;
+   
+    }
+    .first-block__article { 
+      gap: 28px;
+      width: 54%; 
+      font-size: 14px;
+      color: rgba(27, 28, 33, 1);
+      font-family: TT Lakes Regular; 
+      text-align: left;
+      letter-spacing: 0.2px;
+      line-height: 18px;
+  
+    }
+   .first-block__article_text {
+   margin-bottom: 0;
+  }
+  .first-block__article_tablet_text {
+    margin-bottom: 0;
+  }
+  .first-block__article_desktop_text {
+    margin-top: 0;
+  }
+    .read {
+      display: flex;
+      align-items: center; 
+      white-space: pre;
+      background-color: #F8F8F8;
+      border: none;
+      font-size: 16px;
+      font-family: TT Lakes Regular;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.5s ease;
+    }
+    .read:hover {
+    opacity: 0.5;
+    }
+    .read::before {
+      content: url(./images/arrows-1.svg);
+      margin-right: 5%;
+      margin-top: 3%;
+    }
     body::-webkit-scrollbar {
       width: 12px; 
       height: 8px;              
@@ -1015,43 +1146,5 @@ margin-right: 25px;
       background-color: gray;  
       border-radius: 20px;       
       border: 3px solid #F8F8F8;  
-    }
-    .desktop-section {
-      display: flex;
-      position: absolute;
-      top: 180px;
-      left: 3%;
-      gap: 3%;
-      width: 95%;
-      left: 3%;
-      text-align: left;
-    }
-    .desktop-section__image {
-      width: 47%;
-    }
-    .desktop-text {
-      font-family: TT Lakes Regular; 
-      font-size: 14px;
-    }
-    .desktop-read {
-      display: flex;
-      align-items: center;
-      position: absolute;
-      white-space: pre;
-      background-color: #F8F8F8;
-      border: none;
-      font-size: 16px;
-      font-family: TT Lakes Regular;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.5s ease;
-    }
-    .desktop-read:hover {
-      opacity: 0.5;
-      }
-    .desktop-read::before {
-      content: url(./images/arrows-1.svg);
-      margin-right: 5%;
-      margin-top: 3%;
     }
 }
