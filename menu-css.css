@@ -42,7 +42,7 @@ html, body {
     gap: 16px;
     align-items: center;
 }
-.header__left-block_close-button {
+.header__left-block--close-button {
     background-image: url(./images/сlose.svg);
     background-repeat: no-repeat;
     width: 40px;
@@ -52,10 +52,10 @@ html, body {
     transition: transform 0.5s ease;
     cursor: pointer;
 }
-.header__left-block_close-button:hover { 
+.header__left-block--close-button:hover { 
 transform: scale(1.1);
 }
-.header__left-block_cps-button {
+.header__left-block--cps-button {
     background-image: url(./images/svg.svg);
     background-repeat: no-repeat;
     width: 97px;
@@ -100,7 +100,7 @@ width: 4px;
 height: 32px;
 opacity: 1;
 }
-.list__repairs_button {
+.list__repairs--button {
     padding-left: 16px;
     border: none;
     background-color: #fff;
@@ -110,7 +110,7 @@ opacity: 1;
     transition: opacity 0.5s ease;
     cursor: pointer;
 }
-.list__repairs_button:hover {
+.list__repairs--button:hover {
 padding-left: 16px;
 opacity: 0.5;
 }
@@ -131,7 +131,7 @@ width: 4px;
 height: 32px;
 opacity: 1;
 }
-.list__services_button {
+.list__services--button {
     padding-left: 16px;
     border: none;
     background-color: #fff;
@@ -141,7 +141,7 @@ opacity: 1;
     transition: opacity 0.5s ease;
     cursor: pointer;
 }
-.list__services_button:hover {
+.list__services--button:hover {
 padding-left: 16px;
 opacity: 0.5;
 }
@@ -162,7 +162,7 @@ width: 4px;
 height: 32px;
 opacity: 1;
 }
-.list__clients_button {
+.list__clients--button {
     padding-left: 16px;
     border: none;
     background-color: #fff;
@@ -172,7 +172,7 @@ opacity: 1;
     transition: opacity 0.5s ease;
     cursor: pointer;
 }
-.list__clients_button:hover {
+.list__clients--button:hover {
 padding-left: 16px;
 opacity: 0.5;
 }
@@ -193,7 +193,7 @@ width: 4px;
 height: 32px;
 opacity: 1;
 }
-.list__sellers_button {
+.list__sellers--button {
     padding-left: 16px;
     border: none;
     background-color: #fff;
@@ -203,7 +203,7 @@ opacity: 1;
     transition: opacity 0.5s ease;
     cursor: pointer;
 }
-.list__sellers_button:hover {
+.list__sellers--button:hover {
 padding-left: 16px;
 opacity: 0.5;
 }
@@ -224,7 +224,7 @@ width: 4px;
 height: 32px;
 opacity: 1;
 }
-.list__partners_button {
+.list__partners--button {
     padding-left: 16px;
     border: none;
     background-color: #fff;
@@ -234,7 +234,7 @@ opacity: 1;
     transition: opacity 0.5s ease;
     cursor: pointer;
 }
-.list__partners_button:hover {
+.list__partners--button:hover {
 padding-left: 16px;
 opacity: 0.5;
 }
@@ -255,7 +255,7 @@ width: 4px;
 height: 32px;
 opacity: 1;
 }
-.list__creators_button {
+.list__creators--button {
     padding-left: 16px;
     border: none;
     background-color: #fff;
@@ -265,7 +265,7 @@ opacity: 1;
     transition: opacity 0.5s ease;
     cursor: pointer;
 }
-.list__creators_button:hover {
+.list__creators--button:hover {
 padding-left: 16px;
 opacity: 0.5;
 }
@@ -286,7 +286,7 @@ width: 4px;
 height: 32px;
 opacity: 1;
 }
-.list__centers_button {
+.list__centers--button {
     padding-left: 16px;
     border: none;
     background-color: #fff;
@@ -296,7 +296,7 @@ opacity: 1;
     transition: opacity 0.5s ease;
     cursor: pointer;
 }
-.list__centers_button:hover {
+.list__centers--button:hover {
 padding-left: 16px;
 opacity: 0.5;
 }
@@ -317,7 +317,7 @@ width: 4px;
 height: 32px;
 opacity: 1;
 }
-.list__contacts_button {
+.list__contacts--button {
     padding-left: 16px;
     border: none;
     background-color: #fff;
@@ -327,7 +327,7 @@ opacity: 1;
     transition: opacity 0.5s ease;
     cursor: pointer;
 }
-.list__contacts_button:hover {
+.list__contacts--button:hover {
 padding-left: 16px;
 opacity: 0.5;
 }
@@ -338,7 +338,7 @@ opacity: 0.5;
     flex-wrap: wrap;
     margin-left: 24px;
 }
- .footer__phone_button {
+ .footer__phone--button {
     background-image: url(./images/phone.svg);
     background-repeat: no-repeat;
     background-color: #fff;
@@ -347,11 +347,11 @@ opacity: 0.5;
     border: none; 
    transition: transform 0.5s ease; 
 }
- .footer__phone_button:hover {
+ .footer__phone--button:hover {
   transform: scale(1.1);
   cursor: pointer;
  }
- .footer__message_button {
+ .footer__message--button {
     background-image: url(./images/message.svg);
     background-repeat: no-repeat;
     background-color: #fff;
@@ -360,11 +360,11 @@ opacity: 0.5;
     border: none; 
     transition: transform 0.5s ease; 
 }
- .footer__message_button:hover {
+ .footer__message--button:hover {
   transform: scale(1.1);
   cursor: pointer;
  }
- .footer__profile_button {
+ .footer__profile--button {
     background-image: url(./images/profile.svg);
     background-repeat: no-repeat;
     background-color: #fff;
@@ -373,7 +373,7 @@ opacity: 0.5;
     border: none; 
     transition: transform 0.5s ease; 
 }
- .footer__profile_button:hover {
+ .footer__profile--button:hover {
   transform: scale(1.1);
   cursor: pointer;
  }
