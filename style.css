@@ -360,13 +360,13 @@ margin-left: 16px;
     max-width: 767.5px;
     width: 100%;
   }
-  .header__button_profile_tablet_only {
+  .header__tablet-block--buttons--profile {
     display: none;
   }
-  .header__button_message_tablet_only {
+  .header__tablet-block--buttons--message {
     display: none;
   }
-  .header__button_phone_tablet_only {
+  .header__tablet-block--buttons--phone {
     display: none;
   }
   .first-block__article--tablet--text {
@@ -378,13 +378,13 @@ margin-left: 16px;
   .desktop {
     display: none;
   }
-  .header__block_tablet {
+  .header__block--tablet {
     display: none;
   }
-  .header__block_tablet_buttons {
+  .header__tablet-block--buttons {
     display: none;
   }
-  .header__repair-and-search_block_tablet {
+  .header__repair-and-search-block--tablet {
     display: none;
   }
   .first-block__article--desktop--text {
@@ -471,7 +471,7 @@ margin-left: 16px;
       cursor: default;
       pointer-events:none;
     }
-    .header__button_profile_tablet_only {
+    .header__tablet-block--buttons--profile {
       background-image: url(./images/profile.svg);
       width: 40px;
       height: 40px;
@@ -480,11 +480,11 @@ margin-left: 16px;
       background-color: #fff;   
       transition: opacity 0.5s ease;    
     }
-    .header__button_profile_tablet_only:hover {
+    .header__tablet-block--buttons--profile:hover {
       opacity: 0.5;
      cursor: pointer;
      }
-    .header__button_message_tablet_only {
+    .header__tablet-block--buttons--message {
       background-image: url(./images/message.svg);
       width: 40px;
       height: 40px;
@@ -493,11 +493,11 @@ margin-left: 16px;
       background-color: #fff; 
       transition: opacity 0.5s ease;
     }
-    .header__button_message_tablet_only:hover {
+    .header__tablet-block--buttons--message:hover {
      opacity: 0.5;
      cursor: pointer;
      }
-    .header__button_phone_tablet_only {
+    .header__tablet-block--buttons--phone {
       background-image: url(./images/phone.svg);
       width: 40px;
       height: 40px;
@@ -506,7 +506,7 @@ margin-left: 16px;
       background-color: #fff; 
       transition: opacity 0.5s ease;
     }
-    .header__button_phone_tablet_only:hover {
+    .header__tablet-block--buttons--phone:hover {
    opacity: 0.5;
      cursor: pointer;
      }
@@ -775,7 +775,7 @@ margin-left: 16px;
     .first-block__image {
     width: 46%;
     }
-    .header__block_tablet {
+    .header__block--tablet {
       display: flex;
       gap: 34px;
       align-items: center;
@@ -785,11 +785,11 @@ margin-left: 16px;
       gap: 34px;
       align-items: center;
     }
-    .header__block_tablet_buttons {
+    .header__tablet-block--buttons {
       display: flex;
       gap: 16px;
     }
-    .header__repair-and-search_block_tablet {
+    .header__repair-and-search-block--tablet {
       display: flex;
       gap: 16px;
     }
