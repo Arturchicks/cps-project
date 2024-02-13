@@ -27,15 +27,15 @@ box-sizing: border-box;
   border: 0; 
   border-bottom: 1px solid rgba(217, 255, 245, 1);
 }
-.header__menu-and-cps_block {
+.header__menu-and-cps-block {
   display: flex;
   gap: 16px;
 }
-.header__repair-and-search_block {
+.header__repair-and-search-block {
   display: flex;
   gap: 16px;
 }
-.header__button_menu {
+.header__menu-and-cps-block--button--menu {
   display: flex;
   align-self: center;
   background-image: url(./images/svg-1.svg);
@@ -45,12 +45,12 @@ box-sizing: border-box;
   background-color: #ffffff;
   transition: opacity 0.5s ease;
 }
-.header__button_menu:hover {
+.header__menu-and-cps-block--button--menu:hover {
    opacity: 0.5;
    cursor: pointer;
 }
 
-.header__button_cps {
+.header__menu-and-cps-block--button--cps {
   background-image: url(./images/svg.svg);
   width: 98.55px;
   height: 50.81px;
@@ -59,7 +59,7 @@ box-sizing: border-box;
   background-repeat: no-repeat;
 } 
 
-.header__button_repair::before {
+.header__repair-and-search-block--button--repair::before {
   content: url(./images/line.svg);
   width: 2px;
   height: 32px;
@@ -68,7 +68,7 @@ box-sizing: border-box;
   cursor: default;
   pointer-events:none;
 }
-.header__button_repair {
+.header__repair-and-search-block--button--repair {
 width: 40px;
 height: 40px;
 background-image: url(./images/svg-2.svg);
@@ -76,12 +76,12 @@ border: none;
 background-color: #ffffff;
 transition: opacity 0.5s ease;
 }
-.header__button_repair:hover {
+.header__repair-and-search-block--button--repair:hover {
 opacity: 0.5;
 cursor: pointer;
 }
 
-.header__button_search {
+.header__repair-and-search-block--button--search {
   width: 40px;
   height: 40px;
   background-image: url(./images/svg-3.svg);
@@ -89,7 +89,7 @@ cursor: pointer;
   background-color: #ffffff;
   transition: opacity 0.5s ease; 
   }
-  .header__button_search:hover {
+  .header__repair-and-search-block--button--search:hover {
     opacity: 0.5;
     cursor: pointer;
   }
@@ -197,7 +197,7 @@ cursor: pointer;
    font-family: TT Lakes Regular;
    font-size: 16px;
    }
-   .scroll__prices_on_service {
+   .scroll__prices-on-service {
     padding: 9px 20px;
     font-family: TT Lakes Regular;
     color: rgba(126, 126, 130, 1);
@@ -208,7 +208,7 @@ cursor: pointer;
     border: none;  
     background-color: rgba(248, 248, 248, 1);
   }
-   .scroll__prices_on_service:hover {
+   .scroll__prices-on-service:hover {
     padding: 7px 18px;
    border: 2px solid rgba(184, 255, 236, 1); 
    background-color: #ffffff;
@@ -310,6 +310,9 @@ cursor: pointer;
     border: 3px solid #F8F8F8;  
   }
   .first-block {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
     width: 100%;
     }
   .first-block__article { 
@@ -324,7 +327,7 @@ cursor: pointer;
     letter-spacing: 0.2px;
     line-height: 18px;
   }
-  .first-block__article_text {
+  .first-block__article--text {
 width: 90%;
 margin-bottom: 0;
 margin-left: 16px;
@@ -352,7 +355,10 @@ margin-left: 16px;
   .phone-image {
     width: 100%;
         max-height: 300px;
-
+  }
+  .first-block__image{
+    max-width: 767.5px;
+    width: 100%;
   }
   .header__button_profile_tablet_only {
     display: none;
@@ -363,13 +369,10 @@ margin-left: 16px;
   .header__button_phone_tablet_only {
     display: none;
   }
-  .first-block__article_tablet_text {
+  .first-block__article--tablet--text {
     display: none;
   }
   .read_tablet_only { 
-    display: none;
-  }
-  .tablet-image {
     display: none;
   }
   .desktop {
@@ -384,7 +387,7 @@ margin-left: 16px;
   .header__repair-and-search_block_tablet {
     display: none;
   }
-  .first-block__article_desktop_text {
+  .first-block__article--desktop--text {
     display: none;
   }
 }
@@ -405,7 +408,7 @@ margin-left: 16px;
     border-bottom: 1px solid rgba(217, 255, 245, 1);
     justify-content: space-between;
   }
-  .header__button_menu {
+  .header__menu-and-cps-block--button--menu  {
     background-image: url(./images/svg-1.svg);
     width: 40px;
     height: 40px;
@@ -414,12 +417,12 @@ margin-left: 16px;
     top: 27%;
     transition: opacity 0.5s ease;
   }
-  .header__button_menu:hover {
+  .header__menu-and-cps-block--button--menu:hover {
     opacity: 0.5;
     cursor: pointer; 
   }
 
-  .header__button_cps {
+  .header__menu-and-cps-block--button--cps {
     background-image: url(./images/svg.svg);
     width: 98.55px;
     height: 50.81px;
@@ -427,14 +430,14 @@ margin-left: 16px;
     background-color: #ffffff;
     background-repeat: no-repeat;
   } 
-  .header__button_cps::before{
+  .header__menu-and-cps-block--button--cps::before{
     content: url(./images/line.svg);
     width: 2px;
     height: 32px;
     display: block;
     margin-left: -22px;
   }
-  .header__button_search {
+  .header__repair-and-search-block--button--search {
     width: 40px;
     height: 40px;
     background-image: url(./images/svg-3.svg);
@@ -442,12 +445,12 @@ margin-left: 16px;
     background-color: #ffffff;
     transition: opacity 0.5s ease; 
     }
-    .header__button_search:hover {
-     opacity: 0.5;
-      cursor: pointer;
+  .header__repair-and-search-block--button--search:hover {
+    opacity: 0.5;
+    cursor: pointer;
     }
    
-    .header__button_repair {
+    .header__repair-and-search-block--button--repair {
     width: 40px;
     height: 40px;
     background-image: url(./images/svg-2.svg);
@@ -455,11 +458,11 @@ margin-left: 16px;
     background-color: #ffffff;
     transition: opacity 0.5s ease;
     }
-    .header__button_repair:hover {
+    .header__repair-and-search-block--button--repair:hover {
     opacity: 0.5;
     cursor: pointer;
     }
-    .header__button_repair::before {
+    .header__repair-and-search-block--button--repair::before {
       content: url(./images/line.svg);
       width: 2px;
       height: 32px;
@@ -613,7 +616,7 @@ margin-left: 16px;
      font-family: TT Lakes Regular;
      font-size: 16px;
      }
-     .scroll__prices_on_service {
+     .scroll__prices-on-service {
       padding: 9px 20px;
       font-family: TT Lakes Regular;
       color: rgba(126, 126, 130, 1);
@@ -624,7 +627,7 @@ margin-left: 16px;
       border: none;  
       background-color: rgba(248, 248, 248, 1);
     }
-     .scroll__prices_on_service:hover {
+     .scroll__prices-on-service:hover {
       padding: 7px 18px;
      border: 2px solid rgba(184, 255, 236, 1); 
      background-color: #ffffff;
@@ -746,7 +749,7 @@ margin-left: 16px;
       line-height: 18px;
   
     }
-   .first-block__article_text {
+   .first-block__article--text {
    margin: 0;
   }
     .read {
@@ -769,7 +772,7 @@ margin-left: 16px;
       margin-right: 5%;
       margin-top: 3%;
     }
-    .tablet-image {
+    .first-block__image {
     width: 46%;
     }
     .header__block_tablet {
@@ -777,7 +780,7 @@ margin-left: 16px;
       gap: 34px;
       align-items: center;
     }
-    .header__menu-and-cps_block {
+    .header__menu-and-cps-block {
       display: flex;
       gap: 34px;
       align-items: center;
@@ -799,9 +802,12 @@ margin-left: 16px;
   .header__repair-and-search_block {
     display: none;
   }
-  .first-block__article_desktop_text {
+  .first-block__article--desktop--text {
     display: none;
     margin-top: 0;
+  }
+  .header__repair-and-search-block {
+    display: none;
   }
 }
 
@@ -841,7 +847,7 @@ margin-left: 16px;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .desktop__header_title {
+  .desktop__header--title {
     gap: 2.5vw;
     display: flex; 
     align-items: center;
@@ -851,13 +857,13 @@ margin-left: 16px;
     margin: 0;
     white-space: nowrap;
   }
-  .desktop__header_title::before {
+  .desktop__header--title::before {
     content: url(./images/blue-line.svg);
     width: 4px;
     height: 40px;
     margin-right: 5%;
 }
-.desktop__header_send_message_button { 
+.desktop__header--send-message--button { 
   display: flex;
   align-items: center;
   white-space: pre;
@@ -870,17 +876,17 @@ margin-left: 16px;
   font-weight: 600;
 transition: transform 0.5s ease;
 }
-.desktop__header_send_message_button::after {
+.desktop__header--send-message--button::after {
   content: url(./images/svg-2.svg);
   width: 40px;
   height: 40px;
   margin-left: 5%;
 }
-.desktop__header_send_message_button:hover {
+.desktop__header--send-message--button:hover {
 transform: scale(1.1);
 cursor: pointer;
 }
-.desktop__header_repair-status_button {
+.desktop__header--repair-status--button {
   display: flex;
   align-items: center;
   white-space: pre;
@@ -894,13 +900,13 @@ cursor: pointer;
 transition: transform 0.5s ease;
 margin-right: 25px;
 }
-.desktop__header_repair-status_button::after {
+.desktop__header--repair-status--button::after {
   content: url(./images/svg-3.svg);
   width: 40px;
   height: 40px;
   margin-left: 5%;
 }
-.desktop__header_repair-status_button:hover {
+.desktop__header--repair-status--button:hover {
   transform: scale(1.1);
   cursor: pointer;
   }
@@ -1049,7 +1055,7 @@ margin-right: 25px;
      font-family: TT Lakes Regular;
      font-size: 16px;
      }  
-     .scroll__prices_on_service {
+     .scroll__prices-on-service {
       padding: 9px 20px;
       font-family: TT Lakes Regular;
       color: rgba(126, 126, 130, 1);
@@ -1060,7 +1066,7 @@ margin-right: 25px;
       border: none;  
       background-color: rgba(248, 248, 248, 1);
     }
-     .scroll__prices_on_service:hover {
+     .scroll__prices-on-service:hover {
       padding: 7px 18px;
      border: 2px solid rgba(184, 255, 236, 1); 
      background-color: #ffffff;
@@ -1071,7 +1077,7 @@ margin-right: 25px;
      font-family: TT Lakes Regular;
      font-size: 16px;
      }  
-     .tablet-image {
+     .first-block__image {
       max-width: 531px;
      }
      .scroll::-webkit-scrollbar {
@@ -1106,13 +1112,13 @@ margin-right: 25px;
       line-height: 18px;
   
     }
-   .first-block__article_text {
+   .first-block__article--text {
    margin-bottom: 0;
   }
-  .first-block__article_tablet_text {
+  .first-block__article--tablet--text {
     margin-bottom: 0;
   }
-  .first-block__article_desktop_text {
+  .first-block__article--desktop--text {
     margin-top: 0;
   }
     .read {
