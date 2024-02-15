@@ -29,7 +29,6 @@ padding: 16px;
 }
 .brands__slide {
 display: flex;
-gap: 16px;
 margin-left: 16px;
 min-width: 0;
 }
