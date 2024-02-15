@@ -223,3 +223,6 @@ justify-content: center;
 .swiper-pagination-bullet-active {
     background-color: #B5B6BC; 
 }
+.swiper-slide {
+    cursor: pointer;
+}
