@@ -69,9 +69,8 @@ if (innerWidth >= 1120) {
   swiperWrapper.style.flexWrap = 'wrap'; 
   swiperWrapper.style.gap = '16px 2%';
   swiperPagination.style.display = 'none';
-  swiperContainer.style.width = '82%';
-  swiperContainer.style.marginLeft = 'auto'; 
-  swiperContainer.style.marginRight = 'auto';
+  swiperContainer.style.paddingLeft = '24px';
+  swiperContainer.style.width = '80%';
   for (let i = 0; i < slides.length; i++) {
     if (i > 7) {
       slides[i].classList.add('hidden') 
