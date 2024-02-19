@@ -20,6 +20,7 @@ const swiperPagination = document.querySelector('.swiper-pagination');
 const swiperWrapper = document.querySelector('.swiper-wrapper'); 
 const slides = document.querySelectorAll('.swiper-slide'); 
 const showHideBtn = document.querySelector('.showHideBtn');
+const swiperContainer = document.querySelector('.swiper-container'); 
 if (innerWidth < 768) {
   showHideBtn.style.display = 'none'; 
   swiperWrapper.style.marginLeft = '16px'; 
@@ -27,9 +28,10 @@ if (innerWidth < 768) {
 if (innerWidth >= 768) {
   swiper.destroy(); 
   swiperWrapper.style.flexWrap = 'wrap'; 
-  swiperWrapper.style.gap = '16px 24px';
+  swiperWrapper.style.gap = '16px 3%';
   swiperPagination.style.display = 'none';
   swiperWrapper.style.justifyContent = 'center'; 
+  swiperContainer.style.width = '82%';
 let areElementsShown = true;
 for (let i = 0; i < slides.length; i++) {
   if (i > 5) {
