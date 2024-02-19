@@ -28,9 +28,9 @@ if (innerWidth < 768) {
 if (innerWidth >= 768 && innerWidth < 1120) {
   swiper.destroy(); 
   swiperWrapper.style.flexWrap = 'wrap'; 
-  swiperWrapper.style.gap = '16px 3%';
+  swiperWrapper.style.gap = '16px 2%';
   swiperPagination.style.display = 'none';
-  swiperContainer.style.width = '82%';
+  swiperContainer.style.paddingLeft = '24px'; 
 for (let i = 0; i < slides.length; i++) {
   if (i > 5) {
     slides[i].classList.add('hidden') 
@@ -67,9 +67,11 @@ showHideBtn.addEventListener('click', (e) => {
 if (innerWidth >= 1120) {
   swiper.destroy(); 
   swiperWrapper.style.flexWrap = 'wrap'; 
-  swiperWrapper.style.gap = '16px 3%';
+  swiperWrapper.style.gap = '16px 2%';
   swiperPagination.style.display = 'none';
   swiperContainer.style.width = '82%';
+  swiperContainer.style.marginLeft = 'auto'; 
+  swiperContainer.style.marginRight = 'auto';
   for (let i = 0; i < slides.length; i++) {
     if (i > 7) {
       slides[i].classList.add('hidden') 
