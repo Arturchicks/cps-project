@@ -30,7 +30,6 @@ if (innerWidth >= 768) {
   swiperWrapper.style.flexWrap = 'wrap'; 
   swiperWrapper.style.gap = '16px 3%';
   swiperPagination.style.display = 'none';
-  swiperWrapper.style.justifyContent = 'center'; 
   swiperContainer.style.width = '82%';
 let areElementsShown = true;
 for (let i = 0; i < slides.length; i++) {
