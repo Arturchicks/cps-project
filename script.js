@@ -30,8 +30,10 @@ if (innerWidth >= 768 && innerWidth < 1120) {
   swiperWrapper.style.flexWrap = 'wrap'; 
   swiperWrapper.style.gap = '16px 2%';
   swiperPagination.style.display = 'none';
-  swiperContainer.style.paddingLeft = '2.3%'; 
   swiperWrapper.style.width = '750px';
+  swiperContainer.style.width = '750px'; 
+  swiperContainer.style.marginLeft = 'auto'; 
+  swiperContainer.style.marginRight = 'auto';
 for (let i = 0; i < slides.length; i++) {
   if (i > 5) {
     slides[i].classList.add('hidden') 
@@ -70,7 +72,10 @@ if (innerWidth >= 1120) {
   swiperWrapper.style.flexWrap = 'wrap'; 
   swiperWrapper.style.gap = '16px 2%';
   swiperPagination.style.display = 'none';
-  swiperContainer.style.paddingLeft = '24px';
+  swiperWrapper.style.width = '1022px'
+  swiperContainer.style.width = '1022px'
+  swiperContainer.style.marginLeft = 'auto'; 
+  swiperContainer.style.marginRight = 'auto';
   for (let i = 0; i < slides.length; i++) {
     if (i > 7) {
       slides[i].classList.add('hidden') 

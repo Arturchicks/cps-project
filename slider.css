@@ -117,6 +117,31 @@
         display: flex;
     }
     .brands__slide_hp.swiper-slide {
+        display: flex;
+        gap: 4em;
+        border: 1px solid rgba(234, 234, 234, 1);
+        border-radius: 6px;
+        padding: 13px;
+        background-color: rgba(255, 255, 255, 1);
+        max-width: 240px;
+        max-height: 68px;
+        }
+        .brands__slide_hp::after {
+        content: url(./images/next-button.svg);
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        }
+        .brands__slide_hp_el {
+            width: 108px;
+            align-items: center;
+            display: flex;
+        } 
+        .brands__slide_hp_image {
+            max-width: 108px;
+        }
+        
+    .brands__slide_asus.swiper-slide {
     display: flex;
     gap: 4em;
     border: 1px solid rgba(234, 234, 234, 1);
@@ -126,17 +151,20 @@
     max-width: 240px;
     max-height: 68px;
     }
-    .brands__slide_hp::after {
+    .brands__slide_asus::after {
     content: url(./images/next-button.svg);
     display: inline-block;
     height: 40px;
     width: 40px;
     }
-    .brands__slide_hp_el {
+    .brands__slide_asus_el {
         width: 108px;
         align-items: center;
         display: flex;
     } 
+    .brands__slide_asus_image {
+        max-width: 108px;
+    }
     
     .brands__slide--acer.swiper-slide {
         display: flex;
@@ -203,7 +231,55 @@
                     align-items: center;
                     display: flex;
                 }
-    
+                .brands__slide--dell.swiper-slide {
+                    display: flex;
+                    gap: 4em;
+                    border: 1px solid rgba(234, 234, 234, 1);
+                    border-radius: 6px;
+                    padding: 13px;
+                    background-color: rgba(255, 255, 255, 1);
+                    max-width: 240px;
+                    max-height: 68px;
+                    }
+                    .brands__slide--dell::after {
+                    content: url(./images/next-button.svg);
+                    display: inline-block;
+                    height: 40px;
+                    width: 40px;
+                    }
+                    .brands__slide--dell--el {
+                        width: 108px;
+                        align-items: center;
+                        display: flex;
+                    } 
+                    .brands__slide--dell--image {
+                        max-width: 108px;
+                    }
+                    .brands__slide--toshiba.swiper-slide {
+                        display: flex;
+                        gap: 4em;
+                        border: 1px solid rgba(234, 234, 234, 1);
+                        border-radius: 6px;
+                        padding: 13px;
+                        background-color: rgba(255, 255, 255, 1);
+                        max-width: 240px;
+                        max-height: 68px;
+                        }
+                        .brands__slide--toshiba::after {
+                        content: url(./images/next-button.svg);
+                        display: inline-block;
+                        height: 40px;
+                        width: 40px;
+                        }
+                        .brands__slide--toshiba--el {
+                            width: 108px;
+                            align-items: center;
+                            display: flex;
+                        } 
+                        .brands__slide--toshiba--image {
+                            max-width: 108px;
+                        }
+                    
     .swiper-container {
         overflow: hidden;
     }
