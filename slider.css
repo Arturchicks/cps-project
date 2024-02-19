@@ -282,6 +282,9 @@
                     
     .swiper-container {
         overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        width: 750px;
     }
     .swiper-pagination {
     position: static;
@@ -339,4 +342,12 @@
   }
   .swiper-wrapper {
     display: flex;
+  }
+  @media screen and (min-width: 1121px) {
+    .swiper-container {
+        width: 1022px;
+    }
+     .swiper-wrapper {
+        width: 1022px;
+    }
   }
