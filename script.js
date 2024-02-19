@@ -25,18 +25,19 @@ if (innerWidth < 768) {
   showHideBtn.style.display = 'none'; 
   swiperWrapper.style.marginLeft = '16px'; 
 }
-if (innerWidth >= 768) {
+if (innerWidth >= 768 && innerWidth < 1120) {
   swiper.destroy(); 
   swiperWrapper.style.flexWrap = 'wrap'; 
   swiperWrapper.style.gap = '16px 3%';
   swiperPagination.style.display = 'none';
   swiperContainer.style.width = '82%';
-let areElementsShown = true;
 for (let i = 0; i < slides.length; i++) {
   if (i > 5) {
     slides[i].classList.add('hidden') 
   }
-}
+ }
+
+let areElementsShown = true;
 function hideElements() {
   slides.forEach(element => {
    element.classList.remove('hidden');
@@ -49,6 +50,44 @@ function hideElements() {
 function showElements() {
   for (let i = 0; i < slides.length; i++) {
     if (i > 5) {
+    slides[i].classList.add('hidden'); 
+    }
+  }; 
+  areElementsShown = true;
+  showHideBtn.textContent = 'Показать все';
+  showHideBtn.classList.remove('showHideBtn1');
+}
+
+showHideBtn.addEventListener('click', (e) => {
+
+  areElementsShown ? hideElements() : showElements();
+
+}) 
+}; 
+if (innerWidth >= 1120) {
+  swiper.destroy(); 
+  swiperWrapper.style.flexWrap = 'wrap'; 
+  swiperWrapper.style.gap = '16px 3%';
+  swiperPagination.style.display = 'none';
+  swiperContainer.style.width = '82%';
+  for (let i = 0; i < slides.length; i++) {
+    if (i > 7) {
+      slides[i].classList.add('hidden') 
+    }
+   }
+   let areElementsShown = true;
+function hideElements() {
+  slides.forEach(element => {
+   element.classList.remove('hidden');
+  });
+  areElementsShown = false;
+  showHideBtn.textContent = 'Скрыть все';
+  showHideBtn.classList.add('showHideBtn1');
+}
+
+function showElements() {
+  for (let i = 0; i < slides.length; i++) {
+    if (i > 7) {
     slides[i].classList.add('hidden'); 
     }
   }; 
