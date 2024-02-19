@@ -300,6 +300,10 @@
     }
     .swiper-slide {
         cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    .swiper-slide:hover {
+        transform: scale(1.03);
     }
     .brands__slide:nth-child(n + 6) {
         display: none;
