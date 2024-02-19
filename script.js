@@ -31,6 +31,7 @@ if (innerWidth >= 768 && innerWidth < 1120) {
   swiperWrapper.style.gap = '16px 2%';
   swiperPagination.style.display = 'none';
   swiperContainer.style.paddingLeft = '2.3%'; 
+  swiperWrapper.style.width = '750px';
 for (let i = 0; i < slides.length; i++) {
   if (i > 5) {
     slides[i].classList.add('hidden') 
