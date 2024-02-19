@@ -326,7 +326,7 @@
   .showHideBtn::before {
     content: url(./images/arrows-1.svg);
     margin-right: 5%;
-    margin-top: 3px;
+    margin-top: 2px;
   }
   .showHideBtn1::before {
     content: url(./images/arrows-1.svg);
