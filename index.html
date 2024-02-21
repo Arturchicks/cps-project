@@ -1,64 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css"> 
-</head>
-<body>
-    <div class="wrapper"> 
-    <header class="header"> 
-    <div class="header__menu-and-cps-block">
-    <button type="button" class="header__menu-and-cps-block--button--menu"></button>
-    <button type="button" class="header__menu-and-cps-block--button--cps"></button>
-    </div>
-    <div class="header__repair-and-search-block">
-        <button type="button" class="header__repair-and-search-block--button--repair"></button> 
-        <button type="button" class="header__repair-and-search-block--button--search"></button>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__menu-and-cps-block">
+          <button
+            type="button"
+            class="header__menu-and-cps-block--button--menu"
+          ></button>
+          <button
+            type="button"
+            class="header__menu-and-cps-block--button--cps"
+          ></button>
         </div>
-    <div class="header__block--tablet">
-    <div class="header__tablet-block--buttons">
-    <button type="button" class="header__tablet-block--buttons--profile"></button>
-    <button type="button" class="header__tablet-block--buttons--message"></button>
-    <button tepe="button" class="header__tablet-block--buttons--phone"></button>
-    </div>
-    <div class="header__repair-and-search-block--tablet">
-    <button type="button" class="header__repair-and-search-block--button--repair"></button> 
-    <button type="button" class="header__repair-and-search-block--button--search"></button>
-    </div>
- </div>
-    </header>
-    <main class="main">
+        <div class="header__repair-and-search-block">
+          <button
+            type="button"
+            class="header__repair-and-search-block--button--repair"
+          ></button>
+          <button
+            type="button"
+            class="header__repair-and-search-block--button--search"
+          ></button>
+        </div>
+        <div class="header__block--tablet">
+          <div class="header__tablet-block--buttons">
+            <button
+              type="button"
+              class="header__tablet-block--buttons--profile"
+            ></button>
+            <button
+              type="button"
+              class="header__tablet-block--buttons--message"
+            ></button>
+            <button
+              tepe="button"
+              class="header__tablet-block--buttons--phone"
+            ></button>
+          </div>
+          <div class="header__repair-and-search-block--tablet">
+            <button
+              type="button"
+              class="header__repair-and-search-block--button--repair"
+            ></button>
+            <button
+              type="button"
+              class="header__repair-and-search-block--button--search"
+            ></button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
         <h1 class="title">Услуги и сервисы</h1>
         <div class="desktop">
-            <header class="desktop__header">
-                <h1 class="desktop__header--title">Услуги и сервисы</h1>
-                <div class="desktop__buttons">
-                <button class="desktop__header--send-message--button">Оставить заявку</button>
-                <button class="desktop__header--repair-status--button">Cтатус ремонта</button>
-                </div>
-            </header>
-         </div> 
-    <div class="scroll"> 
-         <button class="scroll__repairs">Ремонтируемые устройства</button>
-         <button class="scroll__addition">Дополнительные услуги</button>
-         <button class="scroll__prices">Цены</button>
-         <button class="scroll__prices-on-service">Цены на услуги</button>
-         <button class="scroll__special-prices">Специальные цены</button>
-         <button class="scroll__adresses">Адреса сервисных центров</button>
-         <button class="scroll__reviews">Отзывы</button>
+          <header class="desktop__header">
+            <h1 class="desktop__header--title">Услуги и сервисы</h1>
+            <div class="desktop__buttons">
+              <button class="desktop__header--send-message--button">
+                Оставить заявку
+              </button>
+              <button class="desktop__header--repair-status--button">
+                Cтатус ремонта
+              </button>
+            </div>
+          </header>
+        </div>
+        <div class="scroll">
+          <button class="scroll__repairs">Ремонтируемые устройства</button>
+          <button class="scroll__addition">Дополнительные услуги</button>
+          <button class="scroll__prices">Цены</button>
+          <button class="scroll__prices-on-service">Цены на услуги</button>
+          <button class="scroll__special-prices">Специальные цены</button>
+          <button class="scroll__adresses">Адреса сервисных центров</button>
+          <button class="scroll__reviews">Отзывы</button>
+        </div>
+        <section class="first-block">
+          <article class="first-block__article">
+            <p class="first-block__article--text">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+            </p>
+            <p class="first-block__article--tablet--text">
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера, что подтверждает большое количество постоянных клиентов
+            </p>
+            <p class="first-block__article--desktop--text">
+              Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+              очередь, советуют нас родным и близким.
+            </p>
+            <button class="read">Читать далее</button>
+          </article>
+          <img
+            src="./images/cps__desktop.png"
+            alt="cps-company"
+            class="first-block__image"
+          />
+        </section>
+      </main>
     </div>
-    <section class="first-block">
-        <article class="first-block__article"> 
-            <p class="first-block__article--text"> Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-           <p class="first-block__article--tablet--text"> Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов</p>
-           <p class="first-block__article--desktop--text">Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-            <button class="read">Читать далее</button>   
-        </article>
-        <img src="./images/cps__desktop.png" alt="cps-company" class="first-block__image">          
-    </section> 
-     </main>
-</div>
-</body>
+  </body>
 </html>

@@ -1,443 +1,437 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-html, body { 
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    overflow: hidden;
-}
-@font-face {
-    font-family: TT Lakes Regular;
-    src: url(./fonts/TTLakes-Regular.ttf);
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
 }
 @font-face {
-    font-family: TT Lakes ExtraBold;
-    src: url(./fonts/TTLakes-ExtraBold.ttf);
+  font-family: TT Lakes Regular;
+  src: url(./fonts/TTLakes-Regular.ttf);
+}
+@font-face {
+  font-family: TT Lakes ExtraBold;
+  src: url(./fonts/TTLakes-ExtraBold.ttf);
 }
 .menu {
-    width: 320px;
-    height: 100%;
-    box-shadow: -2px 0px 4px 0px rgba(69, 79, 126, 0.02),  
+  width: 320px;
+  height: 100%;
+  box-shadow:
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02),
     16px 0px 52px 0px rgba(14, 24, 80, 0.2);
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .header {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 78px;
-    align-items: center;
-    padding: 18px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 78px;
+  align-items: center;
+  padding: 18px 0px;
 }
 .top {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 .header__left-block {
-    display: flex;
-    gap: 16px;
-    align-items: center;
+  display: flex;
+  gap: 16px;
+  align-items: center;
 }
 .header__left-block--close-button {
-    background-image: url(./images/сlose.svg);
-    background-repeat: no-repeat;
-    width: 40px;
-    height: 40px;
-    border: none;
-    background-color: #fff;
-    transition: transform 0.5s ease;
-    cursor: pointer;
+  background-image: url(./images/сlose.svg);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #fff;
+  transition: transform 0.5s ease;
+  cursor: pointer;
 }
-.header__left-block--close-button:hover { 
-transform: scale(1.1);
+.header__left-block--close-button:hover {
+  transform: scale(1.1);
 }
 .header__left-block--cps-button {
-    background-image: url(./images/svg.svg);
-    background-repeat: no-repeat;
-    width: 97px;
-    height: 51px;
-    border: none;
-    background-color: #fff;
+  background-image: url(./images/svg.svg);
+  background-repeat: no-repeat;
+  width: 97px;
+  height: 51px;
+  border: none;
+  background-color: #fff;
 }
 .header__search-button {
-    background-image: url(./images/search.svg);
-    background-repeat: no-repeat;
-    width: 40px;
-    height: 40px;
-    border: none;
-    background-color: #fff;
-    transition: transform 0.5s ease;
-    cursor: pointer;
-
+  background-image: url(./images/search.svg);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #fff;
+  transition: transform 0.5s ease;
+  cursor: pointer;
 }
-.header__search-button:hover { 
-    transform: scale(1.1);
-    }
+.header__search-button:hover {
+  transform: scale(1.1);
+}
 .list {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    gap: 24px; 
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 24px;
+  margin: 0;
 }
 .list__repairs {
-    display: flex;
+  display: flex;
 }
 .list__repairs::before {
-content: url(./images/blue-line-menu.svg);
-width: 4px;
-height: 32px;
-opacity: 0;
- transition: opacity 0.5s ease;
+  content: url(./images/blue-line-menu.svg);
+  width: 4px;
+  height: 32px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 .list__repairs:hover::before {
-content: url(./images/blue-line-menu.svg);
-width: 4px;
-height: 32px;
-opacity: 1;
+  content: url(./images/blue-line-menu.svg);
+  width: 4px;
+  height: 32px;
+  opacity: 1;
 }
 .list__repairs--button {
-    padding-left: 16px;
-    border: none;
-    background-color: #fff;
-    font-family: TT Lakes Regular;
-    font-weight: 600;
-    font-size: 16px;
-    transition: opacity 0.5s ease;
-    cursor: pointer;
+  padding-left: 16px;
+  border: none;
+  background-color: #fff;
+  font-family: TT Lakes Regular;
+  font-weight: 600;
+  font-size: 16px;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
 }
 .list__repairs--button:hover {
-padding-left: 16px;
-opacity: 0.5;
+  padding-left: 16px;
+  opacity: 0.5;
 }
 .list__services {
-    display: flex;
- 
+  display: flex;
 }
 .list__services::before {
-content: url(./images/blue-line-menu.svg);
-width: 4px;
-height: 32px;
-opacity: 0;
- transition: opacity 0.5s ease;
+  content: url(./images/blue-line-menu.svg);
+  width: 4px;
+  height: 32px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 .list__services:hover::before {
-content: url(./images/blue-line-menu.svg);
-width: 4px;
-height: 32px;
-opacity: 1;
+  content: url(./images/blue-line-menu.svg);
+  width: 4px;
+  height: 32px;
+  opacity: 1;
 }
 .list__services--button {
-    padding-left: 16px;
-    border: none;
-    background-color: #fff;
-    font-family: TT Lakes Regular;
-    font-weight: 600;
-    font-size: 16px;
-    transition: opacity 0.5s ease;
-    cursor: pointer;
+  padding-left: 16px;
+  border: none;
+  background-color: #fff;
+  font-family: TT Lakes Regular;
+  font-weight: 600;
+  font-size: 16px;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
 }
 .list__services--button:hover {
-padding-left: 16px;
-opacity: 0.5;
+  padding-left: 16px;
+  opacity: 0.5;
 }
 .list__clients {
-    display: flex;
-
+  display: flex;
 }
 .list__clients::before {
-content: url(./images/blue-line-menu.svg);
-width: 4px;
-height: 32px;
-opacity: 0;
- transition: opacity 0.5s ease;
+  content: url(./images/blue-line-menu.svg);
+  width: 4px;
+  height: 32px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 .list__clients:hover::before {
-content: url(./images/blue-line-menu.svg);
-width: 4px;
-height: 32px;
-opacity: 1;
+  content: url(./images/blue-line-menu.svg);
+  width: 4px;
+  height: 32px;
+  opacity: 1;
 }
 .list__clients--button {
-    padding-left: 16px;
-    border: none;
-    background-color: #fff;
-    font-family: TT Lakes Regular;
-    font-weight: 600;
-    font-size: 16px;
-    transition: opacity 0.5s ease;
-    cursor: pointer;
+  padding-left: 16px;
+  border: none;
+  background-color: #fff;
+  font-family: TT Lakes Regular;
+  font-weight: 600;
+  font-size: 16px;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
 }
 .list__clients--button:hover {
-padding-left: 16px;
-opacity: 0.5;
+  padding-left: 16px;
+  opacity: 0.5;
 }
 .list__sellers {
-    display: flex;
-
+  display: flex;
 }
 .list__sellers::before {
-content: url(./images/blue-line-menu.svg);
-width: 4px;
-height: 32px;
-opacity: 0;
- transition: opacity 0.5s ease;
+  content: url(./images/blue-line-menu.svg);
+  width: 4px;
+  height: 32px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 .list__sellers:hover::before {
-content: url(./images/blue-line-menu.svg);
-width: 4px;
-height: 32px;
-opacity: 1;
+  content: url(./images/blue-line-menu.svg);
+  width: 4px;
+  height: 32px;
+  opacity: 1;
 }
 .list__sellers--button {
-    padding-left: 16px;
-    border: none;
-    background-color: #fff;
-    font-family: TT Lakes Regular;
-    font-weight: 600;
-    font-size: 16px;
-    transition: opacity 0.5s ease;
-    cursor: pointer;
+  padding-left: 16px;
+  border: none;
+  background-color: #fff;
+  font-family: TT Lakes Regular;
+  font-weight: 600;
+  font-size: 16px;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
 }
 .list__sellers--button:hover {
-padding-left: 16px;
-opacity: 0.5;
+  padding-left: 16px;
+  opacity: 0.5;
 }
 .list__partners {
-    display: flex;
-
+  display: flex;
 }
 .list__partners::before {
-content: url(./images/blue-line-menu.svg);
-width: 4px;
-height: 32px;
-opacity: 0;
- transition: opacity 0.5s ease;
+  content: url(./images/blue-line-menu.svg);
+  width: 4px;
+  height: 32px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 .list__partners:hover::before {
-content: url(./images/blue-line-menu.svg);
-width: 4px;
-height: 32px;
-opacity: 1;
+  content: url(./images/blue-line-menu.svg);
+  width: 4px;
+  height: 32px;
+  opacity: 1;
 }
 .list__partners--button {
-    padding-left: 16px;
-    border: none;
-    background-color: #fff;
-    font-family: TT Lakes Regular;
-    font-weight: 600;
-    font-size: 16px;
-    transition: opacity 0.5s ease;
-    cursor: pointer;
+  padding-left: 16px;
+  border: none;
+  background-color: #fff;
+  font-family: TT Lakes Regular;
+  font-weight: 600;
+  font-size: 16px;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
 }
 .list__partners--button:hover {
-padding-left: 16px;
-opacity: 0.5;
+  padding-left: 16px;
+  opacity: 0.5;
 }
 .list__creators {
-    display: flex;
- 
+  display: flex;
 }
 .list__creators::before {
-content: url(./images/blue-line-menu.svg);
-width: 4px;
-height: 32px;
-opacity: 0;
- transition: opacity 0.5s ease;
+  content: url(./images/blue-line-menu.svg);
+  width: 4px;
+  height: 32px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 .list__creators:hover::before {
-content: url(./images/blue-line-menu.svg);
-width: 4px;
-height: 32px;
-opacity: 1;
+  content: url(./images/blue-line-menu.svg);
+  width: 4px;
+  height: 32px;
+  opacity: 1;
 }
 .list__creators--button {
-    padding-left: 16px;
-    border: none;
-    background-color: #fff;
-    font-family: TT Lakes Regular;
-    font-weight: 600;
-    font-size: 16px;
-    transition: opacity 0.5s ease;
-    cursor: pointer;
+  padding-left: 16px;
+  border: none;
+  background-color: #fff;
+  font-family: TT Lakes Regular;
+  font-weight: 600;
+  font-size: 16px;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
 }
 .list__creators--button:hover {
-padding-left: 16px;
-opacity: 0.5;
+  padding-left: 16px;
+  opacity: 0.5;
 }
 .list__centers {
-    display: flex;
-
+  display: flex;
 }
 .list__centers::before {
-content: url(./images/blue-line-menu.svg);
-width: 4px;
-height: 32px;
-opacity: 0;
- transition: opacity 0.5s ease;
+  content: url(./images/blue-line-menu.svg);
+  width: 4px;
+  height: 32px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 .list__centers:hover::before {
-content: url(./images/blue-line-menu.svg);
-width: 4px;
-height: 32px;
-opacity: 1;
+  content: url(./images/blue-line-menu.svg);
+  width: 4px;
+  height: 32px;
+  opacity: 1;
 }
 .list__centers--button {
-    padding-left: 16px;
-    border: none;
-    background-color: #fff;
-    font-family: TT Lakes Regular;
-    font-weight: 600;
-    font-size: 16px;
-    transition: opacity 0.5s ease;
-    cursor: pointer;
+  padding-left: 16px;
+  border: none;
+  background-color: #fff;
+  font-family: TT Lakes Regular;
+  font-weight: 600;
+  font-size: 16px;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
 }
 .list__centers--button:hover {
-padding-left: 16px;
-opacity: 0.5;
+  padding-left: 16px;
+  opacity: 0.5;
 }
 .list__contacts {
-    display: flex;
-
+  display: flex;
 }
 .list__contacts::before {
-content: url(./images/blue-line-menu.svg);
-width: 4px;
-height: 32px;
-opacity: 0;
- transition: opacity 0.5s ease;
+  content: url(./images/blue-line-menu.svg);
+  width: 4px;
+  height: 32px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 .list__contacts:hover::before {
-content: url(./images/blue-line-menu.svg);
-width: 4px;
-height: 32px;
-opacity: 1;
+  content: url(./images/blue-line-menu.svg);
+  width: 4px;
+  height: 32px;
+  opacity: 1;
 }
 .list__contacts--button {
-    padding-left: 16px;
-    border: none;
-    background-color: #fff;
-    font-family: TT Lakes Regular;
-    font-weight: 600;
-    font-size: 16px;
-    transition: opacity 0.5s ease;
-    cursor: pointer;
+  padding-left: 16px;
+  border: none;
+  background-color: #fff;
+  font-family: TT Lakes Regular;
+  font-weight: 600;
+  font-size: 16px;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
 }
 .list__contacts--button:hover {
-padding-left: 16px;
-opacity: 0.5;
+  padding-left: 16px;
+  opacity: 0.5;
 }
 .footer {
-    display: flex;
-    gap: 16px;
-    width: 85%;
-    flex-wrap: wrap;
-    margin-left: 24px;
+  display: flex;
+  gap: 16px;
+  width: 85%;
+  flex-wrap: wrap;
+  margin-left: 24px;
 }
- .footer__phone--button {
-    background-image: url(./images/phone.svg);
-    background-repeat: no-repeat;
-    background-color: #fff;
-    width: 40px;
-    height: 40px;
-    border: none; 
-   transition: transform 0.5s ease; 
+.footer__phone--button {
+  background-image: url(./images/phone.svg);
+  background-repeat: no-repeat;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border: none;
+  transition: transform 0.5s ease;
 }
- .footer__phone--button:hover {
+.footer__phone--button:hover {
   transform: scale(1.1);
   cursor: pointer;
- }
- .footer__message--button {
-    background-image: url(./images/message.svg);
-    background-repeat: no-repeat;
-    background-color: #fff;
-    width: 40px;
-    height: 40px;
-    border: none; 
-    transition: transform 0.5s ease; 
 }
- .footer__message--button:hover {
+.footer__message--button {
+  background-image: url(./images/message.svg);
+  background-repeat: no-repeat;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border: none;
+  transition: transform 0.5s ease;
+}
+.footer__message--button:hover {
   transform: scale(1.1);
   cursor: pointer;
- }
- .footer__profile--button {
-    background-image: url(./images/profile.svg);
-    background-repeat: no-repeat;
-    background-color: #fff;
-    width: 40px;
-    height: 40px;
-    border: none; 
-    transition: transform 0.5s ease; 
 }
- .footer__profile--button:hover {
+.footer__profile--button {
+  background-image: url(./images/profile.svg);
+  background-repeat: no-repeat;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border: none;
+  transition: transform 0.5s ease;
+}
+.footer__profile--button:hover {
   transform: scale(1.1);
   cursor: pointer;
- }
+}
 .footer__email {
-    text-decoration: none;
-    font-family: TT Lakes Regular;
-    font-size: 16px;
-    color: rgba(27, 28, 33, 1);
-    font-weight: 600;
+  text-decoration: none;
+  font-family: TT Lakes Regular;
+  font-size: 16px;
+  color: rgba(27, 28, 33, 1);
+  font-weight: 600;
 }
 .footer__phone {
-    text-decoration: none;
- font-family: TT Lakes ExtraBold;
- font-size: 24px;
- letter-spacing: -0.6px;
- color: rgba(27, 28, 33, 1);
+  text-decoration: none;
+  font-family: TT Lakes ExtraBold;
+  font-size: 24px;
+  letter-spacing: -0.6px;
+  color: rgba(27, 28, 33, 1);
 }
 .lang {
-    display: flex;
-    gap: 8px;
-    margin-top: 24px;
+  display: flex;
+  gap: 8px;
+  margin-top: 24px;
 }
- .lang__ru {
-    padding: 0;
-    font-weight: 600;
-    color: #1B1C21;
-    font-size: 16px;
-    font-family: TT Lakes Regular;
-    border: none;
-    background-color: #fff;
-    transition: opacity 0.5s ease;
- }
- .lang__ru:hover {
-    opacity: 0.5;
-    cursor: pointer;
- }
- .lang__en {
-    padding: 0;
-    font-weight: 600;
-    color: #1B1C21;
-    font-size: 16px;
-    font-family: TT Lakes Regular;
-    border: none;
-    background-color: #fff;
-    transition: opacity 0.5s ease;
- }
- .lang__en:hover {
-    opacity: 0.5;
-    cursor: pointer;
- }
- .lang__ch {
-    padding: 0;
-    font-weight: 600;
-    color: #1B1C21;
-    font-size: 16px;
-    font-family: TT Lakes Regular;
-    border: none;
-    background-color: #fff;
-    transition: opacity 0.5s ease;
- }
- .lang__ch:hover {
-    opacity: 0.5;
-    cursor: pointer;
- }
+.lang__ru {
+  padding: 0;
+  font-weight: 600;
+  color: #1b1c21;
+  font-size: 16px;
+  font-family: TT Lakes Regular;
+  border: none;
+  background-color: #fff;
+  transition: opacity 0.5s ease;
+}
+.lang__ru:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.lang__en {
+  padding: 0;
+  font-weight: 600;
+  color: #1b1c21;
+  font-size: 16px;
+  font-family: TT Lakes Regular;
+  border: none;
+  background-color: #fff;
+  transition: opacity 0.5s ease;
+}
+.lang__en:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.lang__ch {
+  padding: 0;
+  font-weight: 600;
+  color: #1b1c21;
+  font-size: 16px;
+  font-family: TT Lakes Regular;
+  border: none;
+  background-color: #fff;
+  transition: opacity 0.5s ease;
+}
+.lang__ch:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
 .footer {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
